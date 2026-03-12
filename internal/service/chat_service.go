@@ -16,6 +16,7 @@ import (
 
 	"io.winapps/internal/catalog"
 	"io.winapps/internal/config"
+	"io.winapps/internal/content"
 	"io.winapps/internal/domain"
 )
 
@@ -407,6 +408,11 @@ func (c *siteCatalog) pages(ctx context.Context) ([]domain.SitePage, error) {
 }
 
 func (c *siteCatalog) load(ctx context.Context) ([]domain.SitePage, error) {
+	localPages, localErr := content.LoadSitePages(c.cfg)
+	if localErr == nil && len(localPages) > 0 {
+		return localPages, nil
+	}
+
 	paths := c.cfg.SiteSeedPaths
 	if len(paths) == 0 {
 		paths = catalog.DefaultSeedPaths()
@@ -467,6 +473,9 @@ func (c *siteCatalog) load(ctx context.Context) ([]domain.SitePage, error) {
 		}
 	}
 	if len(pages) == 0 {
+		if localErr != nil {
+			return nil, fmt.Errorf("unable to load local content or fetch website pages: %w", localErr)
+		}
 		return nil, fmt.Errorf("unable to fetch any website pages from %s", c.cfg.SiteBaseURL)
 	}
 	return pages, nil

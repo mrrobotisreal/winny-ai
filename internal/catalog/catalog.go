@@ -103,9 +103,20 @@ func BuildSystemPrompt(request domain.ChatRequest, pages []domain.SitePage) stri
 		b.WriteString("\nRelevant website context:\n")
 		for _, page := range pages {
 			b.WriteString(fmt.Sprintf("\nPage: %s\n", page.Title))
-			b.WriteString(fmt.Sprintf("URL: %s\n", page.URL))
+			if page.URL != "" {
+				b.WriteString(fmt.Sprintf("URL: %s\n", page.URL))
+			}
+			if page.Path != "" {
+				b.WriteString(fmt.Sprintf("Route: %s\n", page.Path))
+			}
+			if page.SourcePath != "" {
+				b.WriteString(fmt.Sprintf("Doc path: %s\n", page.SourcePath))
+			}
 			if page.Summary != "" {
 				b.WriteString("Summary: " + page.Summary + "\n")
+			}
+			if page.Content != "" {
+				b.WriteString("Doc excerpt:\n" + page.Content + "\n")
 			}
 		}
 	}

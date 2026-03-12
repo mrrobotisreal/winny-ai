@@ -15,6 +15,7 @@ type Config struct {
 	HTTPReadTimeout      time.Duration
 	HTTPWriteTimeout     time.Duration
 	HTTPIdleTimeout      time.Duration
+	ContentDir           string
 	OllamaHost           string
 	OllamaBin            string
 	OllamaKeepAlive      string
@@ -40,6 +41,7 @@ func Load() Config {
 		HTTPReadTimeout:      envOrDefaultDuration("HTTP_READ_TIMEOUT", 30*time.Second),
 		HTTPWriteTimeout:     envOrDefaultDuration("HTTP_WRITE_TIMEOUT", 10*time.Minute),
 		HTTPIdleTimeout:      envOrDefaultDuration("HTTP_IDLE_TIMEOUT", 2*time.Minute),
+		ContentDir:           envOrDefault("CONTENT_DIR", "./internal/content"),
 		OllamaHost:           envOrDefault("OLLAMA_HOST", "http://127.0.0.1:11434"),
 		OllamaBin:            envOrDefault("OLLAMA_BIN", "ollama"),
 		OllamaKeepAlive:      envOrDefault("OLLAMA_KEEP_ALIVE", "0m"),

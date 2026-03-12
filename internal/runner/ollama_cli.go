@@ -45,6 +45,7 @@ func (r *OllamaCLIRunner) Stream(ctx context.Context, settings domain.ChatSettin
 	if settings.SystemPrompt != "" {
 		fmt.Fprintf(stdin, "/set system %s\n", settings.SystemPrompt)
 	}
+	fmt.Fprintln(stdin, "/set nothink")
 	fmt.Fprintf(stdin, "/set parameter temperature %v\n", settings.Temperature)
 	fmt.Fprintf(stdin, "/set parameter top_p %v\n", settings.TopP)
 	fmt.Fprintf(stdin, "/set parameter top_k %d\n", settings.TopK)
@@ -53,7 +54,7 @@ func (r *OllamaCLIRunner) Stream(ctx context.Context, settings domain.ChatSettin
 	fmt.Fprintf(stdin, "/set parameter repeat_penalty %v\n", settings.RepeatPenalty)
 	fmt.Fprintf(stdin, "%s\n", prompt)
 
-	cmd := exec.CommandContext(ctx, r.cfg.OllamaBin, "run", settings.TextModel)
+	cmd := exec.CommandContext(ctx, r.cfg.OllamaBin, "run", "--think=false", settings.TextModel)
 	cmd.Stdin = stdin
 	cmd.Env = runnerEnv(r.cfg, settings)
 

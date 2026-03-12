@@ -44,10 +44,11 @@ type AssistantResponse struct {
 }
 
 type SitePage struct {
-	URL     string
-	Path    string
-	Title   string
-	Summary string
-	Content string
-	Tokens  map[string]struct{} `json:"-"`
+	URL        string
+	Path       string
+	SourcePath string
+	Title      string
+	Summary    string
+	Content    string
+	Tokens     map[string]struct{} `json:"-"`
 }
