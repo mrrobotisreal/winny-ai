@@ -48,7 +48,7 @@ func Load() Config {
 		OllamaContextLength:  envOrDefault("OLLAMA_CONTEXT_LENGTH", "16384"),
 		OllamaKVCacheType:    envOrDefault("OLLAMA_KV_CACHE_TYPE", "q8_0"),
 		OllamaFlashAttention: envOrDefault("OLLAMA_FLASH_ATTENTION", "1"),
-		AssistantModel:       envOrDefault("OLLAMA_MODEL", "deepseek-r1:8b-llama-distill-q8_0"),
+		AssistantModel:       envOrDefault("OLLAMA_MODEL", "winny-ai-v1"),
 		SiteBaseURL:          strings.TrimRight(envOrDefault("SITE_BASE_URL", "https://winapps.io"), "/"),
 		SiteSeedPaths:        envOrDefaultCSV("SITE_SEED_PATHS", nil),
 		SiteRequestTimeout:   envOrDefaultDuration("SITE_REQUEST_TIMEOUT", 10*time.Second),
