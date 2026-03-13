@@ -6,16 +6,20 @@
 - Category: `home`
 
 ## Purpose
-Backend content mirror for Winny so the assistant can answer questions about this page quickly and accurately.
+Backend content mirror for Winny so the assistant can answer broad website questions quickly and accurately.
 
 ## Winny Notes
-- Use this page for broad questions about what WinApps.io contains and where visitors should navigate next.
-- This is a good entry point when someone asks for a quick overview of Mitch, his skills, projects, and portfolio.
+- Use this page for broad questions about what WinApps.io contains, what Mitchell is focused on now, and where visitors should navigate next.
+- CreaTV Ltd. is Mitchell's primary mission outside of work and should be prioritized when users ask what he is building now.
+- Mitchell also works on the People Inc. mobile app ad revenue team and is a Lead Senior Software Engineer & Founding Engineer at Mirror Inc.
 
 ## Search Keywords
-`Welcome`, `Win`, `Apps`, `Your`, `browser`, `does`, `not`, `support`, `video`, `tag`, `WinApps.io`, `name`, `Mitchell`, `Wintrow`, `personal`, `website`, `where`, `detail`, `everything`, `about`
+`WinApps.io`, `Mitchell Wintrow`, `CreaTV`, `creatv.io`, `Mirror Inc`, `Mirror`, `trymirror.ai`, `People Inc`, `mobile ad revenue`, `AI interview platform`, `language learning`, `Russian`, `Ukrainian`, `Hebrew`, `Farsi`, `Modern Standard Arabic`, `Vietnamese`, `Mandarin Chinese`, `Spanish`, `AI server`, `home lab`, `full tower server`, `Alina`, `Ukraine`, `DJI Mini 4 Pro`, `drone`
 
 ## Important Links
+- https://www.creatv.io
+- https://trymirror.ai
+- https://winapps.io/portfolio/mirror
 - https://www.linkedin.com/in/mitchell-wintrow/
 - https://github.com/mrrobotisreal
 - https://medium.com/@90mitchwintrow
@@ -39,4 +43,25 @@ Backend content mirror for Winny so the assistant can answer questions about thi
 
 ## Page Content Snapshot
 
-Welcome to Win Apps ! Your browser does not support the video tag. Welcome to WinApps.io! My name is Mitchell Wintrow and this my personal website where I detail everything about who I am as a software engineer and as a person, provide many examples of projects I've previously worked on and am currently working on, publish all kinds of tech blogs and tutorials, and provide you with my contact information. Please have a look at the top navigation bar to see all the different pages and sections of this website, and you'll see some easily accessible links below of my work experience, projects I've worked on, and blog posts I've written. My Resumé My Resumé Work Experience Hover over the links if you want to see more details before clicking. CreaTV (Current) People Inc. (Current) Double Raven Solutions LLC Amazon Connect Customer Profiles VMware Double Raven Solutions LLC Projects Hover over the links if you want to see more details before clicking. CreaTV (Current) MP3 Drive Player JourneyApp.me (Web) JourneyApp.me (iOS) Voizy (Android) Aspire To Expand Live Demos Hover over the links if you want to see more details before clicking. Media Manipulator Pro (Media Converter) Quantum River (Custom QR Code Generator) Text Formatter (Site-Agnostic Text Formatter) RSS Today (RSS News Feed Reader) CarvanaServer (GraphQL Cursor-Based Pagination) Blog Posts Hover over the links if you want to see more details before clicking. The React Files: What "They" Don't Want You to Know 11 JavaScript Power-Ups You Probably Aren't Using (Yet) Optimize Your Multimedia and Make Your READMEs Pop on GitHub @ mitchwintrow github/mrrobotisreal Contact Me Mitch Wintrow Senior Software Engineer Backend Skills Java Python LightFM Go Docker Kubernetes PostgreSQL MySQL MongoDB Firebase GraphQL LetsEncrypt Kotlin Vercel Frontend Skills TypeScript JavaScript React ReactQuery TestingLibrary Cypress Svelte Webpack Next.js Vite Mobile Skills Kotlin Swift Dart Flutter TypeScript JavaScript React Native ReactQuery Expo
+WinApps.io is Mitchell Wintrow's personal website and project hub.
+
+Mitchell is a Senior Software Engineer focused on mobile, web, AI, and distributed backend systems. The site highlights that he currently works on the People Inc. mobile app ad revenue team, that his primary mission outside of work is building CreaTV Ltd. as a creator-first UGC video platform like YouTube but better, and that he is also a Lead Senior Software Engineer & Founding Engineer at Mirror Inc., an AI interview platform for businesses and candidates.
+
+High-interest profile details represented across the site:
+- Deep interest in foreign language learning and building software that helps people learn faster, communicate across cultures, and connect around the world
+- Studies Russian, Ukrainian, Hebrew, Farsi, Modern Standard Arabic, Vietnamese, Mandarin Chinese, and Spanish
+- Runs custom AI models locally on a custom full tower server / workstation and home-lab setup
+- Loves traveling with his fiancée Alina, who is from Ukraine
+- Loves filming scenic drone flyovers with a DJI Mini 4 Pro
+
+Primary routes linked from the homepage:
+- `/about`
+- `/portfolio`
+- `/portfolio/people-inc`
+- `/portfolio/mirror`
+- `/projects/creatv`
+- `/projects/media-manipulator-pro`
+- `/projects/journey-app`
+- `/projects/voizy`
+- `/blog`
+- `/contact`

@@ -9,7 +9,7 @@
 /portfolio | Portfolio | internal/content/portfolio/page.md
 /portfolio/amazon-connect | Amazon Connect Customer Profiles | internal/content/portfolio/amazon-connect/page.md
 /portfolio/double-raven | Double Raven Solutions LLC | internal/content/portfolio/double-raven/page.md
-/portfolio/flashmock | Flash Mock | internal/content/portfolio/flashmock/page.md
+/portfolio/mirror | Mirror Inc. | internal/content/portfolio/mirror/page.md
 /portfolio/people-inc | People Inc. | internal/content/portfolio/people-inc/page.md
 /portfolio/vmware | VM ware | internal/content/portfolio/vmware/page.md
 /products/journey-app | Journey App.me | internal/content/products/journey-app/page.md

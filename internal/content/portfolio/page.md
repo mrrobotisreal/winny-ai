@@ -12,10 +12,12 @@ Backend content mirror for Winny so the assistant can answer questions about thi
 - Portfolio pages describe Mitchell's professional work history and project contributions for employers or clients.
 
 ## Search Keywords
-`portfolio`, `professional`, `work`, `experience`, `contributions`, `various`, `companies`, `projects`, `People`, `Inc`, `Description`, `Senior`, `Software`, `Engineer`, `formerly`, `known`, `Dotdash`, `Meredith`, `Timeframe`, `August`
+`portfolio`, `professional work`, `People Inc`, `mobile app ad revenue`, `Mirror Inc`, `Mirror`, `trymirror.ai`, `Founding Engineer`, `Senior Software Engineer`, `Amazon Connect`, `Double Raven`, `VMware`, `projects`
 
 ## Important Links
 - https://winapps.io/portfolio/people-inc
+- https://winapps.io/portfolio/mirror
+- https://trymirror.ai
 - https://winapps.io/portfolio/double-raven
 - https://winapps.io/portfolio/amazon-connect
 - https://winapps.io/portfolio/vmware
@@ -23,4 +25,14 @@ Backend content mirror for Winny so the assistant can answer questions about thi
 
 ## Page Content Snapshot
 
-Portfolio My professional work experience and contributions to various companies and projects. People Inc. Description: Senior Software Engineer at People Inc. (formerly known as Dotdash Meredith). Timeframe: August 2025 - Present Current Role: Senior Software Engineer View Project Page → Double Raven Solutions LLC Description: Frontend Software Engineer at Double Raven Solutions LLC. Timeframe: June 2020 - January 2022, January 2025 - May 2025 Role: Full Stack Software Engineer, Frontend Software Engineer View Project Page → Amazon Connect Customer Profiles Description: Frontend Software Engineer at Amazon Web Services. Timeframe: August 2022 - November 2024 Role: Frontend Software Engineer View Project Page → VMware Description: Backend Software Engineer at VMware. Timeframe: June 2022 - August 2022 Role: Backend Software Engineer View Project Page → Personal Projects Description: Various mobile apps, web applications, and open source contributions. Timeframe: 7+ years Current Role: Mobile App Engineer, Frontend Software Engineer, Backend Software Engineer, Full Stack Software Engineer View Projects →
+Portfolio page covering Mitchell's professional work experience and contributions to companies and products.
+
+Current highlighted roles:
+- People Inc. - Senior Software Engineer on the mobile app ad revenue team
+- Mirror Inc. - Lead Senior Software Engineer & Founding Engineer for an AI interview platform for businesses and candidates
+
+Additional portfolio entries:
+- Double Raven Solutions LLC
+- Amazon Connect Customer Profiles
+- VMware
+- Personal Projects

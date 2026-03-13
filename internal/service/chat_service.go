@@ -13,6 +13,7 @@ import (
 	"strings"
 	"sync"
 	"time"
+	"unicode"
 
 	"io.winapps/internal/catalog"
 	"io.winapps/internal/config"
@@ -32,7 +33,276 @@ var (
 	commentRe    = regexp.MustCompile(`(?s)<!--.*?-->`)
 	tagRe        = regexp.MustCompile(`(?s)<[^>]+>`)
 	whitespaceRe = regexp.MustCompile(`\s+`)
-	tokenRe      = regexp.MustCompile(`[a-z0-9]+`)
+	tokenRe      = regexp.MustCompile(`[\p{L}\p{N}]+`)
+
+	languageRequestPhrases = map[string][]string{
+		"English": {
+			"respond in english",
+			"answer in english",
+			"reply in english",
+			"write in english",
+		},
+		"Russian": {
+			"respond in russian",
+			"answer in russian",
+			"reply in russian",
+			"write in russian",
+			"на русском",
+			"по-русски",
+			"ответь по-русски",
+			"ответьте по-русски",
+		},
+		"Ukrainian": {
+			"respond in ukrainian",
+			"answer in ukrainian",
+			"reply in ukrainian",
+			"write in ukrainian",
+			"українською",
+			"відповідай українською",
+			"відповідь українською",
+		},
+		"Hebrew": {
+			"respond in hebrew",
+			"answer in hebrew",
+			"reply in hebrew",
+			"write in hebrew",
+			"ענה בעברית",
+			"בעברית",
+		},
+		"Modern Standard Arabic": {
+			"respond in arabic",
+			"answer in arabic",
+			"reply in arabic",
+			"write in arabic",
+			"أجب بالعربية",
+			"بالعربية",
+		},
+		"Spanish": {
+			"respond in spanish",
+			"answer in spanish",
+			"reply in spanish",
+			"write in spanish",
+			"responde en español",
+			"en español por favor",
+		},
+		"Vietnamese": {
+			"respond in vietnamese",
+			"answer in vietnamese",
+			"reply in vietnamese",
+			"write in vietnamese",
+			"trả lời bằng tiếng việt",
+			"bằng tiếng việt",
+		},
+		"Mandarin Chinese": {
+			"respond in chinese",
+			"answer in chinese",
+			"reply in chinese",
+			"write in chinese",
+			"请用中文",
+			"用中文回答",
+		},
+		"French": {
+			"respond in french",
+			"answer in french",
+			"reply in french",
+			"write in french",
+			"réponds en français",
+			"en français",
+		},
+		"German": {
+			"respond in german",
+			"answer in german",
+			"reply in german",
+			"write in german",
+			"antworte auf deutsch",
+			"auf deutsch",
+		},
+		"Portuguese": {
+			"respond in portuguese",
+			"answer in portuguese",
+			"reply in portuguese",
+			"write in portuguese",
+			"responda em português",
+			"em português",
+		},
+		"Italian": {
+			"respond in italian",
+			"answer in italian",
+			"reply in italian",
+			"write in italian",
+			"rispondi in italiano",
+			"in italiano",
+		},
+		"Japanese": {
+			"respond in japanese",
+			"answer in japanese",
+			"reply in japanese",
+			"write in japanese",
+			"日本語で答えて",
+			"日本語で",
+		},
+	}
+
+	websiteTerms = []string{
+		"winny",
+		"winapps",
+		"winapps.io",
+		"website",
+		"site",
+		"page",
+		"mitch",
+		"mitchell",
+		"mitchell wintrow",
+		"project",
+		"portfolio",
+		"blog",
+		"contact",
+		"about",
+		"download",
+		"support",
+		"documentation",
+		"privacy",
+		"terms",
+		"journey app",
+		"journey",
+		"voizy",
+		"creatv",
+		"creatv.io",
+		"mirror",
+		"mirror inc",
+		"trymirror.ai",
+		"media manipulator",
+		"finance flow",
+		"quantum river",
+		"rss today",
+		"text formatter",
+		"mp3 drive player",
+		"people inc",
+		"mobile ad revenue",
+		"vmware",
+		"amazon connect",
+		"double raven",
+		"alina",
+		"ukraine",
+		"drone",
+		"dji mini 4 pro",
+		"ai server",
+		"home server",
+		"full tower server",
+		"language learning",
+		"russian",
+		"ukrainian",
+		"hebrew",
+		"farsi",
+		"modern standard arabic",
+		"mandarin chinese",
+		"spanish",
+		"vietnamese",
+		"сайт",
+		"страница",
+		"митч",
+		"митчелл",
+		"портфолио",
+		"проект",
+		"контакт",
+		"блог",
+		"сторінка",
+		"мітч",
+		"мітчелл",
+		"портфоліо",
+		"проєкт",
+		"контакти",
+		"אתר",
+		"עמוד",
+		"מיטש",
+		"מיטשל",
+		"פרויקט",
+		"פורטפוליו",
+		"בלוג",
+		"יצירת קשר",
+		"موقع",
+		"صفحة",
+		"ميتش",
+		"ميتشل",
+		"مشروع",
+		"مدونة",
+		"اتصال",
+		"sitio",
+		"página",
+		"portafolio",
+		"proyecto",
+		"contacto",
+		"trang",
+		"trang web",
+		"dự án",
+		"liên hệ",
+		"tải xuống",
+		"网站",
+		"页面",
+		"项目",
+		"作品集",
+		"联系",
+		"下载",
+		"米切尔",
+		"ce site",
+		"cette page",
+		"projet",
+		"diese seite",
+		"diese website",
+		"projekt",
+		"kontakt",
+		"este site",
+		"esta página",
+		"projeto",
+		"contato",
+		"questa pagina",
+		"questo sito",
+		"progetto",
+		"contatto",
+		"このページ",
+		"このサイト",
+		"プロジェクト",
+		"連絡先",
+		"ミッチェル",
+	}
+
+	pageScopedPhrases = []string{
+		"this page",
+		"current page",
+		"on this site",
+		"on this page",
+		"here on the site",
+		"what does this page",
+		"tell me about this page",
+		"эта страница",
+		"на этом сайте",
+		"на этой странице",
+		"ця сторінка",
+		"на цьому сайті",
+		"на цій сторінці",
+		"העמוד הזה",
+		"באתר הזה",
+		"בדף הזה",
+		"هذه الصفحة",
+		"هذا الموقع",
+		"في هذه الصفحة",
+		"esta página",
+		"este sitio",
+		"en esta página",
+		"trang này",
+		"trên trang này",
+		"这个页面",
+		"这个网站",
+		"在这个页面",
+		"cette page",
+		"ce site",
+		"auf dieser seite",
+		"este site",
+		"questa pagina",
+		"questo sito",
+		"このページ",
+		"このサイト",
+	}
 )
 
 type AssistantRunner interface {
@@ -73,7 +343,9 @@ func (s *ChatService) StreamChat(ctx context.Context, request domain.ChatRequest
 
 	pages, pagesErr := s.siteCatalog.pages(ctx)
 	relevantPages := rankRelevantPages(request, pages)
-	if !isWebsiteQuestion(request, relevantPages) {
+	preferredLanguage := inferPreferredResponseLanguage(request)
+	browserLanguageHint := supportedBrowserLanguageHint(request.BrowserLanguage)
+	if !isWebsiteQuestion(request, relevantPages, preferredLanguage, browserLanguageHint) {
 		return s.streamStaticReply(onEvent, catalog.OutOfScopeReply())
 	}
 
@@ -86,7 +358,12 @@ func (s *ChatService) StreamChat(ctx context.Context, request domain.ChatRequest
 	}
 
 	settings := s.defaultSettings
-	settings.SystemPrompt = catalog.BuildSystemPrompt(request, relevantPages)
+	settings.SystemPrompt = catalog.BuildSystemPrompt(
+		request,
+		relevantPages,
+		preferredLanguage,
+		browserLanguageHint,
+	)
 
 	_, err := s.runner.Stream(ctx, settings, messages, func(delta domain.AssistantDelta) error {
 		if delta.Done {
@@ -181,54 +458,19 @@ func sanitizeMessages(messages []domain.Message) []domain.Message {
 	return out
 }
 
-func isWebsiteQuestion(request domain.ChatRequest, relevant []domain.SitePage) bool {
-	message := strings.ToLower(lastUserMessage(request.Messages))
+func isWebsiteQuestion(request domain.ChatRequest, relevant []domain.SitePage, preferredLanguage, browserLanguageHint string) bool {
+	message := strings.TrimSpace(lastUserMessage(request.Messages))
 	if message == "" {
 		return false
 	}
+	messageLower := strings.ToLower(message)
 
-	websiteTerms := []string{
-		"winny",
-		"winapps",
-		"website",
-		"site",
-		"page",
-		"mitch",
-		"mitchell",
-		"project",
-		"portfolio",
-		"blog",
-		"contact",
-		"about",
-		"download",
-		"support",
-		"documentation",
-		"privacy",
-		"terms",
-		"journey app",
-		"journey",
-		"voizy",
-		"creatv",
-		"finance flow",
-		"media manipulator",
-		"quantum river",
-		"rss today",
-		"text formatter",
-		"mp3 drive player",
-		"people inc",
-		"vmware",
-		"amazon connect",
-		"double raven",
-		"flashmock",
-	}
-	for _, term := range websiteTerms {
-		if strings.Contains(message, term) {
-			return true
-		}
+	if containsAnySubstring(messageLower, websiteTerms) {
+		return true
 	}
 
 	if len(relevant) > 0 {
-		queryTokens := tokenize(message)
+		queryTokens := tokenize(messageLower)
 		for _, page := range relevant {
 			for token := range queryTokens {
 				if _, ok := page.Tokens[token]; ok {
@@ -238,20 +480,14 @@ func isWebsiteQuestion(request domain.ChatRequest, relevant []domain.SitePage) b
 		}
 	}
 
-	if request.PagePath != "" || request.PageURL != "" {
-		pageScopedPhrases := []string{
-			"this page",
-			"current page",
-			"on this site",
-			"on this page",
-			"here on the site",
-			"what does this page",
-			"tell me about this page",
-		}
-		for _, phrase := range pageScopedPhrases {
-			if strings.Contains(message, phrase) {
-				return true
-			}
+	if containsAnySubstring(messageLower, pageScopedPhrases) {
+		return true
+	}
+
+	currentPath := normalizedPagePath(request.PagePath, request.PageURL)
+	if currentPath != "" && hasCurrentPageMatch(relevant, currentPath) {
+		if preferredLanguage != "" || browserLanguageHint != "" || usesSupportedNonLatinScript(message) {
+			return true
 		}
 	}
 
@@ -265,6 +501,124 @@ func lastUserMessage(messages []domain.Message) string {
 		}
 	}
 	return ""
+}
+
+func inferPreferredResponseLanguage(request domain.ChatRequest) string {
+	message := strings.TrimSpace(lastUserMessage(request.Messages))
+	if message == "" {
+		return ""
+	}
+	if language := detectExplicitResponseLanguage(message); language != "" {
+		return language
+	}
+	return detectLanguageByScript(message)
+}
+
+func supportedBrowserLanguageHint(browserLanguage string) string {
+	value := strings.ToLower(strings.TrimSpace(browserLanguage))
+	switch {
+	case strings.HasPrefix(value, "ru"):
+		return "Russian"
+	case strings.HasPrefix(value, "uk"):
+		return "Ukrainian"
+	case strings.HasPrefix(value, "he"), strings.HasPrefix(value, "iw"):
+		return "Hebrew"
+	case strings.HasPrefix(value, "ar"):
+		return "Modern Standard Arabic"
+	case strings.HasPrefix(value, "es"):
+		return "Spanish"
+	case strings.HasPrefix(value, "vi"):
+		return "Vietnamese"
+	case strings.HasPrefix(value, "zh"):
+		return "Mandarin Chinese"
+	case strings.HasPrefix(value, "fr"):
+		return "French"
+	case strings.HasPrefix(value, "de"):
+		return "German"
+	case strings.HasPrefix(value, "pt"):
+		return "Portuguese"
+	case strings.HasPrefix(value, "it"):
+		return "Italian"
+	case strings.HasPrefix(value, "ja"):
+		return "Japanese"
+	default:
+		return ""
+	}
+}
+
+func detectExplicitResponseLanguage(message string) string {
+	message = strings.ToLower(strings.TrimSpace(message))
+	for language, phrases := range languageRequestPhrases {
+		for _, phrase := range phrases {
+			if strings.Contains(message, phrase) {
+				return language
+			}
+		}
+	}
+	return ""
+}
+
+func detectLanguageByScript(message string) string {
+	hasCyrillic := false
+	hasUkrainianMarker := false
+	hasHebrew := false
+	hasArabic := false
+	hasHan := false
+
+	for _, r := range message {
+		switch {
+		case unicode.In(r, unicode.Hiragana, unicode.Katakana):
+			return "Japanese"
+		case unicode.In(r, unicode.Hebrew):
+			hasHebrew = true
+		case unicode.In(r, unicode.Arabic):
+			hasArabic = true
+		case unicode.In(r, unicode.Cyrillic):
+			hasCyrillic = true
+			if strings.ContainsRune("іїєґІЇЄҐ", r) {
+				hasUkrainianMarker = true
+			}
+		case unicode.In(r, unicode.Han):
+			hasHan = true
+		}
+	}
+
+	switch {
+	case hasHebrew:
+		return "Hebrew"
+	case hasArabic:
+		return "Modern Standard Arabic"
+	case hasCyrillic && hasUkrainianMarker:
+		return "Ukrainian"
+	case hasCyrillic:
+		return "Russian"
+	case hasHan:
+		return "Mandarin Chinese"
+	default:
+		return ""
+	}
+}
+
+func containsAnySubstring(message string, terms []string) bool {
+	for _, term := range terms {
+		if strings.Contains(message, term) {
+			return true
+		}
+	}
+	return false
+}
+
+func hasCurrentPageMatch(relevant []domain.SitePage, currentPath string) bool {
+	for _, page := range relevant {
+		if samePath(page.Path, currentPath) {
+			return true
+		}
+	}
+	return false
+}
+
+func usesSupportedNonLatinScript(message string) bool {
+	return detectLanguageByScript(message) != ""
 }
 
 func rankRelevantPages(request domain.ChatRequest, pages []domain.SitePage) []domain.SitePage {

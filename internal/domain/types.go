@@ -6,10 +6,11 @@ type Message struct {
 }
 
 type ChatRequest struct {
-	Messages  []Message `json:"messages"`
-	PageURL   string    `json:"pageUrl,omitempty"`
-	PageTitle string    `json:"pageTitle,omitempty"`
-	PagePath  string    `json:"pagePath,omitempty"`
+	Messages        []Message `json:"messages"`
+	PageURL         string    `json:"pageUrl,omitempty"`
+	PageTitle       string    `json:"pageTitle,omitempty"`
+	PagePath        string    `json:"pagePath,omitempty"`
+	BrowserLanguage string    `json:"browserLanguage,omitempty"`
 }
 
 type StreamEvent struct {

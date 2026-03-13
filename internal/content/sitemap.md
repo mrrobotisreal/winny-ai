@@ -24,7 +24,7 @@ This sitemap maps website routes to the mirrored markdown docs under `internal/c
 - `/portfolio` -> `internal/content/portfolio/page.md` (Portfolio)
 - `/portfolio/amazon-connect` -> `internal/content/portfolio/amazon-connect/page.md` (Amazon Connect Customer Profiles)
 - `/portfolio/double-raven` -> `internal/content/portfolio/double-raven/page.md` (Double Raven Solutions LLC)
-- `/portfolio/flashmock` -> `internal/content/portfolio/flashmock/page.md` (Flash Mock)
+- `/portfolio/mirror` -> `internal/content/portfolio/mirror/page.md` (Mirror Inc.)
 - `/portfolio/people-inc` -> `internal/content/portfolio/people-inc/page.md` (People Inc.)
 - `/portfolio/vmware` -> `internal/content/portfolio/vmware/page.md` (VM ware)
 

@@ -12,7 +12,7 @@ Backend content mirror for Winny so the assistant can answer questions about thi
 - Portfolio pages describe Mitchell's professional work history and project contributions for employers or clients.
 
 ## Search Keywords
-`portfolio/people-inc`, `People`, `Inc`, `Portfolio`, `Position`, `Senior`, `Software`, `Engineer`, `Start`, `End`, `Dates`, `August`, `2025`, `Present`, `Full-Time`, `Coming`, `Soon`
+`portfolio/people-inc`, `People Inc`, `Senior Software Engineer`, `mobile app ad revenue`, `ad revenue team`, `People mobile app`, `August 2025`, `current role`
 
 ## Important Links
 - https://winapps.io/
@@ -20,4 +20,4 @@ Backend content mirror for Winny so the assistant can answer questions about thi
 
 ## Page Content Snapshot
 
-Home / Portfolio / People Inc. People Inc. Position Senior Software Engineer Start & End Dates August 2025 - Present (Full-Time) 🚧 Coming Soon... 🚧
+Home / Portfolio / People Inc. People Inc. Position Senior Software Engineer Start & End Dates August 2025 - Present (Full-Time) Current Focus Mitchell works on the mobile app ad revenue team at People Inc., helping build ad revenue systems and related mobile platform experiences for the People app.
