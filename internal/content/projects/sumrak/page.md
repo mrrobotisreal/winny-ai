@@ -13,7 +13,7 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 - Never state dollar figures or revenue numbers.
 
 ## Search Keywords
-`projects/sumrak`, `Сумрак`, `Сумрак (Sumrak)`, `Expo`, `React Native`, `TypeScript`, `SQLite`, `Drizzle`, `Kotlin`, `sherpa-onnx`, `Piper`, `Whisper`, `FSRS`, `ElevenLabs`, `Go`, `Postgres`, `Firebase Auth`, `Zod`, `Vitest`, `Sumrak`, `Russian learning`, `language learning`, `ТРКИ`, `TORFL`, `creepypasta`, `Alina`
+`projects/sumrak`, `Сумрак`, `Сумрак (Sumrak)`, `Expo`, `React Native`, `TypeScript`, `SQLite`, `Drizzle`, `Kotlin`, `sherpa-onnx`, `Piper`, `Whisper`, `FSRS`, `ElevenLabs`, `Go`, `Postgres`, `Firebase Auth`, `Zod`, `Vitest`, `Sumrak`, `Russian learning`, `language learning`, `ТРКИ`, `TORFL`, `creepypasta`, `Alina`, `voice clone`, `Mr. Wintrow`, `Obsidian`
 
 ## Important Links
 
@@ -59,6 +59,15 @@ User data never holds a foreign key into content. Items reference packs by stabl
 - 122 packs across A1–C1: 75 story packs, 17 exam packs, 15 course floors, 10 speaking scenarios
 - 504 story entries, 26,867 annotated sentences, 4,461 Opus audio files
 - 25 series, each with its own bible
+
+## My voices on ElevenLabs
+
+Most of Сумрак's audio is read in my own voice. I created two professional voice clones on ElevenLabs: **Mr. Wintrow**, which narrates the stories, and **Obsidian**, a character voice that is starting to appear in the stories as well. The other characters use custom voices designed for each cast.
+
+Both voices are public in the ElevenLabs voice library, so you can use them in your own projects.
+
+- [Mr. Wintrow (narration) on ElevenLabs](https://elevenlabs.io/app/voice-lab/share/437b6c647ef328e2535d05d610a2cc1f1813a37ba51d58b502d655f8e1ed97f7/HQ4Xi3gPf8Q6bJUlao6z)
+- [Obsidian (characters) on ElevenLabs](https://elevenlabs.io/app/voice-lab/share/98f56dc987320f0d940cd99d45980b44a5b07a67a621c0f0cc4f091d2087b97a/QjEdRoRdZC2i3ncmFpNy)
 
 ## Reader and word bank
 

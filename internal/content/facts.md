@@ -13,4 +13,5 @@
 - Project: CreaTV (active): A creator-first video platform, built as twenty-plus services.
 - Languages he is learning: Russian (primary focus), Ukrainian (studying), Hebrew (studying).
 - Mirror Inc.: the contract ended in May 2026. Mirror is a past role only.
+- Mitch's ElevenLabs voices (public, anyone can use them): "Mr. Wintrow" for narration https://elevenlabs.io/app/voice-lab/share/437b6c647ef328e2535d05d610a2cc1f1813a37ba51d58b502d655f8e1ed97f7/HQ4Xi3gPf8Q6bJUlao6z and "Obsidian" for characters https://elevenlabs.io/app/voice-lab/share/98f56dc987320f0d940cd99d45980b44a5b07a67a621c0f0cc4f091d2087b97a/QjEdRoRdZC2i3ncmFpNy
 - Never give dollar figures or percentages for People Inc revenue impact; describe it qualitatively.
