@@ -1,27 +1,26 @@
 # Voizy (Android)
 
 - Route: `/projects/voizy/support`
-- Source page: `app/projects/voizy/support/page.tsx`
-- Canonical URL: `https://winapps.io/projects/voizy/support`
+- Canonical URL: `https://www.winapps.io/projects/voizy/support`
 - Category: `projects`
 
 ## Purpose
-Backend content mirror for Winny so the assistant can answer questions about this page quickly and accurately.
+Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
 - Project pages usually contain the deepest technical and product details for WinApps.io offerings.
 - When the visitor asks about tech stack, architecture, features, or live demos, these pages are often the best sources.
+- This page is unchanged by the 2026 site revamp.
+- This page is unchanged by the 2026 site revamp.
+- This page is unchanged by the 2026 site revamp.
 
 ## Search Keywords
 `projects/voizy/support`, `Voizy`, `Android`, `Projects`, `Support`, `Product`, `you`, `have`, `any`, `questions`, `need`, `please`, `contact`, `mitchellwintrow@gmail.com`, `are`, `here`, `help`, `should`, `receive`, `response`
 
-## Important Emails
-- `mitchellwintrow@gmail.com`
-
 ## Important Links
-- https://winapps.io/
-- https://winapps.io/projects
-- https://winapps.io/projects/voizy
+- https://www.winapps.io/
+- https://www.winapps.io/projects
+- https://www.winapps.io/projects/voizy
 
 ## Page Content Snapshot
 

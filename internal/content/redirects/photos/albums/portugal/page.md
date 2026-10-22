@@ -1,16 +1,18 @@
 # Photo Album Redirect: Portugal
 
 - Route: `/redirects/photos/albums/portugal`
-- Source page: `app/redirects/photos/albums/portugal/page.tsx`
-- Canonical URL: `https://winapps.io/redirects/photos/albums/portugal`
+- Canonical URL: `https://www.winapps.io/redirects/photos/albums/portugal`
 - Category: `redirects`
 
 ## Purpose
-Backend content mirror for Winny so the assistant can answer questions about this page quickly and accurately.
+Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
 - These routes are redirect helpers to Google Photos albums; they are not fully hosted album pages.
 - This route exists to redirect visitors to the external album.
+- This page is unchanged by the 2026 site revamp.
+- This page is unchanged by the 2026 site revamp.
+- This page is unchanged by the 2026 site revamp.
 
 ## Search Keywords
 `redirects/photos/albums/portugal`, `Photo`, `Album`, `Redirect`, `Portugal`, `Branded`, `Google`, `Photos`

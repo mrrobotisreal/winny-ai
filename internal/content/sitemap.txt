@@ -1,32 +1,28 @@
-/ | Welcome to Win Apps ! | internal/content/page.md
+/ | Mitch Wintrow — Senior Software Engineer | internal/content/page.md
 /about | About Mitchell Wintrow | internal/content/about/page.md
-/about/mitchell-wintrow | About Mitchell Wintrow | internal/content/about/mitchell-wintrow/page.md
 /blog | Blog | internal/content/blog/page.md
-/contact | Contact Me | internal/content/contact/page.md
+/contact | Contact | internal/content/contact/page.md
 /download/creatv-mobile/android | Download CreaTV Mobile for Android | internal/content/download/creatv-mobile/android/page.md
 /download/mp3-drive-player/android | Download MP3 Drive Player for Android | internal/content/download/mp3-drive-player/android/page.md
 /download/mp3-drive-player/ios | Download MP3 Drive Player for iOS | internal/content/download/mp3-drive-player/ios/page.md
-/portfolio | Portfolio | internal/content/portfolio/page.md
-/portfolio/amazon-connect | Amazon Connect Customer Profiles | internal/content/portfolio/amazon-connect/page.md
-/portfolio/double-raven | Double Raven Solutions LLC | internal/content/portfolio/double-raven/page.md
-/portfolio/mirror | Mirror Inc. | internal/content/portfolio/mirror/page.md
-/portfolio/people-inc | People Inc. | internal/content/portfolio/people-inc/page.md
-/portfolio/vmware | VM ware | internal/content/portfolio/vmware/page.md
-/products/journey-app | Journey App.me | internal/content/products/journey-app/page.md
+/portfolio | Work history | internal/content/portfolio/page.md
+/portfolio/amazon-connect | Software Development Engineer (Front End), Amazon Connect Customer Profiles, Amazon Web Services | internal/content/portfolio/amazon-connect/page.md
+/portfolio/double-raven-2020 | Full-stack Software Engineer, Double Raven Solutions LLC | internal/content/portfolio/double-raven-2020/page.md
+/portfolio/double-raven-2025 | Founding Senior Software Engineer, Double Raven Solutions LLC | internal/content/portfolio/double-raven-2025/page.md
+/portfolio/mirror | Lead Senior Software Engineer & Founding Engineer, Mirror Inc. | internal/content/portfolio/mirror/page.md
+/portfolio/people-inc | Senior Software Engineer, People Inc. | internal/content/portfolio/people-inc/page.md
+/portfolio/vmware | Software Engineer, VMware | internal/content/portfolio/vmware/page.md
 /products/journey-app/contact | Journey App.me Contact | internal/content/products/journey-app/contact/page.md
 /products/journey-app/contact/form | Journey App.me Support | internal/content/products/journey-app/contact/form/page.md
 /products/journey-app/privacy-policy | Journey App.me Privacy Policy | internal/content/products/journey-app/privacy-policy/page.md
 /products/journey-app/terms-of-use | Journey App.me Terms of Use | internal/content/products/journey-app/terms-of-use/page.md
-/projects | Current Projects | internal/content/projects/page.md
-/projects/aspire-to-expand | Aspire To Expand | internal/content/projects/aspire-to-expand/page.md
-/projects/creatv | Crea TV | internal/content/projects/creatv/page.md
+/projects | Projects | internal/content/projects/page.md
+/projects/creatv | CreaTV | internal/content/projects/creatv/page.md
 /projects/finance-flow | Finance Flow | internal/content/projects/finance-flow/page.md
-/projects/journey-app | Journey App.me | internal/content/projects/journey-app/page.md
-/projects/media-manipulator-pro | Media Manipulator Pro | internal/content/projects/media-manipulator-pro/page.md
+/projects/journey-app | JourneyApp.me | internal/content/projects/journey-app/page.md
+/projects/media-manipulator | Media Manipulator | internal/content/projects/media-manipulator/page.md
 /projects/mp3-drive-player | MP3 Drive Player | internal/content/projects/mp3-drive-player/page.md
-/projects/quantum-river | Quantum River | internal/content/projects/quantum-river/page.md
-/projects/rss-today | RSS Today | internal/content/projects/rss-today/page.md
-/projects/text-formatter | Text Formatter | internal/content/projects/text-formatter/page.md
+/projects/sumrak | Сумрак (Sumrak) | internal/content/projects/sumrak/page.md
 /projects/text-formatter/privacy-policy | Privacy Policy | internal/content/projects/text-formatter/privacy-policy/page.md
 /projects/voizy | Voizy | internal/content/projects/voizy/page.md
 /projects/voizy/documentation | Voizy (Android) | internal/content/projects/voizy/documentation/page.md

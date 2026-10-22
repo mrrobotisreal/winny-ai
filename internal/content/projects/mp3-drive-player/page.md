@@ -1,27 +1,62 @@
 # MP3 Drive Player
 
 - Route: `/projects/mp3-drive-player`
-- Source page: `app/projects/mp3-drive-player/page.tsx`
-- Canonical URL: `https://winapps.io/projects/mp3-drive-player`
+- Canonical URL: `https://www.winapps.io/projects/mp3-drive-player`
 - Category: `projects`
 
 ## Purpose
-Backend content mirror for Winny so the assistant can answer questions about this page quickly and accurately.
+Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
-- Project pages usually contain the deepest technical and product details for WinApps.io offerings.
-- When the visitor asks about tech stack, architecture, features, or live demos, these pages are often the best sources.
+- Status: shipped; Creator, sole engineer; Jun 2025 – Aug 2025.
+- Never state dollar figures or revenue numbers.
 
 ## Search Keywords
-`projects/mp3-drive-player`, `MP3`, `Drive`, `Player`, `Projects`, `Position`, `Lead`, `Fullstack`, `Engineer`, `Mobile`, `Front`, `End`, `Back`, `Start`, `Dates`, `6/28/2025`, `Present`, `Responsibilities`, `Some`, `sole`
+`projects/mp3-drive-player`, `MP3 Drive Player`, `React Native`, `Expo`, `TypeScript`, `React`, `Vite`, `shadcn/ui`, `Radix UI`, `Tailwind CSS`, `Google Drive API`, `Stream Chat`, `Firebase`, `PostHog`, `Mixpanel`, `Vercel`
 
 ## Important Links
-- https://winapps.io/
-- https://winapps.io/projects
-- https://www.winapps.io/download/mp3-drive-player/ios
+- https://lang.media-manipulator.com
 - https://www.winapps.io/download/mp3-drive-player/android
-- https://lang.media-manipulator.com/
+- https://www.winapps.io/download/mp3-drive-player/ios
 
 ## Page Content Snapshot
 
-Home / Projects / MP3 Drive Player MP3 Drive Player Position Lead Fullstack Engineer (Mobile,Front End, Back End) Start & End Dates 6/28/2025 - Present Responsibilities Some of my responsibilities as the sole engineer on this project include: Build the mobile app Build the web app Deploy the mobile app on TestFlight and the web app on Vercel Integrate with Google Drive API to access the Pimsleur audio files Integrate with Stream Chat for the chat feature Integrate with PostHog and Mixpanel for analytics Integrate with Firebase for authentication and storage Contributions Some of my contributions in this project include: Build the Mobile App Build the Web App Evidence You can download the ipa file for iOS testing via sideloading now ! (Or just use TestFlight to download the app once you've reached out to me for credentials) You can download the apk file for Android testing now ! You can visit the web app now ! 🚧 Screenshots & Screen Recordings Coming Soon... 🚧
+# MP3 Drive Player
+
+> A language-learning audio player for Pimsleur-style courses, with stats, games and chat.
+
+- Status: shipped
+- Role: Creator, sole engineer
+- Dates: Jun 2025 – Aug 2025
+- Page: https://www.winapps.io/projects/mp3-drive-player
+
+MP3 Drive Player plays Pimsleur-style audio courses straight from a Google Drive folder and wraps them in a learning app: a stats dashboard, games and chat. I built the mobile app and the web app.
+
+## Role
+
+I was the sole engineer on both clients and their integrations.
+
+- Built the mobile app and the web app.
+- Shipped the iOS app through TestFlight and the web app on Vercel.
+- Integrated the Google Drive API to stream the course audio.
+- Integrated Stream Chat for chat, PostHog and Mixpanel for analytics, and Firebase for authentication and storage.
+
+## Mobile app
+
+The mobile app is React Native, Expo and TypeScript. It reads the course folder through the Google Drive API and plays the audio, with Stream Chat for chat and Firebase for authentication and storage.
+
+The iOS build went out through TestFlight for beta testing. Android builds are available as an APK from the download page; new account creation is turned off, so testers need credentials from me.
+
+## Web app
+
+The web app is Vite, TypeScript and React with shadcn/ui, Radix UI and Tailwind CSS, on the same Google Drive, Stream Chat and Firebase integrations, deployed on Vercel.
+
+## Tech
+
+React Native, Expo, TypeScript, React, Vite, shadcn/ui, Radix UI, Tailwind CSS, Google Drive API, Stream Chat, Firebase, PostHog, Mixpanel, Vercel
+
+## Links
+
+- [Open the web app](https://lang.media-manipulator.com)
+- [Download for Android](https://www.winapps.io/download/mp3-drive-player/android)
+- [Download for iOS](https://www.winapps.io/download/mp3-drive-player/ios)

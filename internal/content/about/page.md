@@ -1,62 +1,57 @@
 # About Mitchell Wintrow
 
 - Route: `/about`
-- Source page: `app/about/page.tsx`
-- Canonical URL: `https://winapps.io/about`
+- Canonical URL: `https://www.winapps.io/about`
 - Category: `about`
 
 ## Purpose
-Backend content mirror for Winny so the assistant can answer questions about this page quickly and accurately.
+Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
-- Use this page when someone asks about Mitchell Wintrow's background, current work, current mission, language learning interests, personal life, or technical skill set.
-- Prioritize CreaTV when someone asks what Mitchell is building now or what his startup mission is.
+- Biography, education, languages and life outside work.
 
 ## Search Keywords
-`about`, `Mitchell Wintrow`, `Senior Software Engineer`, `mobile`, `web`, `AI`, `distributed backend systems`, `CreaTV`, `creatv.io`, `Mirror Inc`, `Mirror`, `trymirror.ai`, `AI interviews`, `People Inc`, `mobile ad revenue`, `Russian`, `Hebrew`, `Vietnamese`, `Spanish`, `Ukrainian`, `Farsi`, `Mandarin`, `Modern Standard Arabic`, `Alina`, `Ukraine`, `DJI Mini 4 Pro`, `drone`, `AI server`, `full tower server`, `home lab`
+`about`, `bio`, `education`, `WGU`, `Hack Reactor`, `Russian`, `Ukrainian`, `Hebrew`
 
 ## Important Links
-- https://www.creatv.io
-- https://trymirror.ai
-- https://winapps.io/portfolio/mirror
-
-## Important Emails
-- `mitchellwintrow@gmail.com`
+- https://www.winapps.io/contact
+- https://www.winapps.io/portfolio
 
 ## Page Content Snapshot
 
-Mitchell Wintrow is a Senior Software Engineer focused on mobile, web, AI, and distributed backend systems.
+# About Mitchell Wintrow
 
-Current reality:
-- Works on the mobile app ad revenue team at People Inc.
-- Primary mission outside of work is building CreaTV Ltd., a creator-first UGC video platform, like YouTube but better
-- Very close second mission is learning foreign languages and building software that helps people learn faster, communicate across cultures, and connect around the world
-- Actively studies Russian, Ukrainian, Hebrew, Farsi, Modern Standard Arabic, Vietnamese, Mandarin Chinese, and Spanish
-- Also serves as a Lead Senior Software Engineer & Founding Engineer at Mirror Inc., an AI interview platform for businesses to conduct AI interviews and for candidates to practice and improve for technical interviews
+Senior Software Engineer. I build mobile ad tech for the People app by day and ship my own products at night: a browser video editor, a creator video platform, and a Russian-learning app built for one student.
 
-Professional Experience
-- Senior Software Engineer at People Inc. (Full-time, Aug 2025 - Present) - working on the mobile app ad revenue team
-- Lead Senior Software Engineer & Founding Engineer at Mirror Inc. (Contract, May 2025 - Present)
-- Frontend Software Engineer at Double Raven Solutions LLC (Part-time, Jan 2025 - May 2025)
-- Frontend Software Engineer at Amazon Web Services (Full-time, Aug 2022 - Nov 2024)
-- Backend Software Engineer at VMware (Full-time, Jun 2022 - Aug 2022)
-- Student Full-stack Software Engineer at Hack Reactor bootcamp (Full-time 576 hours certification, Feb 2022 - May 2022)
-- Full-stack Software Engineer at Double Raven Solutions LLC (Full-time, Jun 2020 - Jan 2022)
+I'm a senior software engineer who works across mobile, web, and backend systems. At People Inc. I'm on the People mobile app's ad revenue team, where I own the prebidding integrations and the ad configuration backend.
 
-Current Projects
-- CreaTV - creator-first UGC video platform, like YouTube but better
-- Mirror - AI interview platform for businesses and candidates
-- Media Manipulator - image, video, and audio editing and transformation tools
-- Voizy - social/mobile app
-- Journey App - journaling and reflection app
-- Various web, desktop, mobile, AI, and internal tools
+Outside work I build products end to end. Media Manipulator is a browser media toolkit with a multi-track video editor called Darkroom, running on GPU servers I operate myself. CreaTV is a creator-first video platform I founded. Сумрак (Sumrak) is a Russian-learning app I built for myself, and it is the most complete piece of software I've made.
 
-Personal
-- Founder & Principal Engineer of CreaTV Ltd.
-- Passionate about software engineering, AI, and building systems end-to-end
-- Built a custom full tower server / workstation and runs custom AI models locally, with ongoing AI server and home-lab experiments
-- Loves traveling the world with his fiancée Alina, who is from Ukraine
-- Loves bringing a DJI Mini 4 Pro to scenic places and filming drone flyover videos
+I'm learning Russian seriously, with Ukrainian and Hebrew alongside it. Most of what I build outside work exists to help me learn faster.
 
-Get In Touch
+## Education
+
+- Western Governors University, B.S. Computer Science
+- Hack Reactor, Software Engineering Immersive (Feb 2022 – May 2022). Voted class president.
+
+## Languages
+
+- Russian: Primary focus
+- Ukrainian: Studying
+- Hebrew: Studying
+
+## Outside work
+
+- I run a home-lab GPU server that hosts my AI workloads and Winny, this site's assistant.
+
+## Contact
+
 - Email: mitchellwintrow@gmail.com
+- Location: Colorado, USA
+- Resume: https://www.winapps.io/MitchellWintrow_Resume.pdf
+- LinkedIn: https://www.linkedin.com/in/mitchell-wintrow/
+- GitHub: https://github.com/mrrobotisreal
+- Medium: https://medium.com/@90mitchwintrow
+- X: https://x.com/mitchwintrow
+- YouTube: https://www.youtube.com/@mitchwintrow
+- Linktree: https://linktr.ee/wintrow

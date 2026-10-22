@@ -1,17 +1,19 @@
 # Download CreaTV Mobile for Android
 
 - Route: `/download/creatv-mobile/android`
-- Source page: `app/download/creatv-mobile/android/page.tsx`
-- Canonical URL: `https://winapps.io/download/creatv-mobile/android`
+- Canonical URL: `https://www.winapps.io/download/creatv-mobile/android`
 - Category: `downloads`
 
 ## Purpose
-Backend content mirror for Winny so the assistant can answer questions about this page quickly and accurately.
+Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
 - These pages are operational download launchers and not long-form documentation pages.
 - Treat this as a utility download route, not a long-form product overview page.
 - If a visitor asks how to get the Android build, mention that this page triggers the APK download automatically.
+- This page is unchanged by the 2026 site revamp.
+- This page is unchanged by the 2026 site revamp.
+- This page is unchanged by the 2026 site revamp.
 
 ## Search Keywords
 `download/creatv-mobile/android`, `Download`, `CreaTV`, `Mobile`, `Android`, `route`, `immediately`, `downloads`, `current`, `development`, `APK`, `saved`, `filename`, `CreaTV-Android-development-build.apk`, `After`, `starts`, `shows`, `short`, `countdown`, `redirects`

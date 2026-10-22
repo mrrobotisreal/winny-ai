@@ -1,23 +1,24 @@
 # Privacy Policy
 
 - Route: `/projects/text-formatter/privacy-policy`
-- Source page: `app/projects/text-formatter/privacy-policy/page.tsx`
-- Canonical URL: `https://winapps.io/projects/text-formatter/privacy-policy`
+- Canonical URL: `https://www.winapps.io/projects/text-formatter/privacy-policy`
 - Category: `projects`
 
 ## Purpose
-Backend content mirror for Winny so the assistant can answer questions about this page quickly and accurately.
+Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
 - Project pages usually contain the deepest technical and product details for WinApps.io offerings.
 - When the visitor asks about tech stack, architecture, features, or live demos, these pages are often the best sources.
 - This policy page is especially useful for privacy, permissions, and extension data-collection questions.
+- This page is unchanged by the 2026 site revamp.
+- This page is unchanged by the 2026 site revamp.
+- This page is unchanged by the 2026 site revamp.
 
 ## Search Keywords
 `projects/text-formatter/privacy-policy`, `Privacy`, `Policy`, `Last`, `Updated`, `June`, `2025`, `Bottom`, `Line`, `Text`, `Formatter`, `doesn`, `collect`, `store`, `transmit`, `any`, `your`, `personal`, `data`, `Everything`
 
-## Important Emails
-- `mitchellwintrow@gmail.com`
+## Important Links
 
 ## Page Content Snapshot
 
