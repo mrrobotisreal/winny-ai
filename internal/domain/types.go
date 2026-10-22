@@ -52,4 +52,6 @@ type SitePage struct {
 	Summary    string
 	Content    string
 	Tokens     map[string]struct{} `json:"-"`
+	// Keywords are the doc's "## Search Keywords" entries, lowercased.
+	Keywords []string `json:"-"`
 }

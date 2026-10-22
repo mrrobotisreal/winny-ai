@@ -174,7 +174,6 @@ var (
 		"media manipulator",
 		"finance flow",
 		"quantum river",
-		"rss today",
 		"text formatter",
 		"mp3 drive player",
 		"people inc",
@@ -182,22 +181,12 @@ var (
 		"vmware",
 		"amazon connect",
 		"double raven",
-		"alina",
-		"ukraine",
-		"drone",
-		"dji mini 4 pro",
 		"ai server",
 		"home server",
-		"full tower server",
 		"language learning",
 		"russian",
 		"ukrainian",
 		"hebrew",
-		"farsi",
-		"modern standard arabic",
-		"mandarin chinese",
-		"spanish",
-		"vietnamese",
 		"сайт",
 		"страница",
 		"митч",
@@ -264,6 +253,24 @@ var (
 		"プロジェクト",
 		"連絡先",
 		"ミッチェル",
+	}
+
+	// staticSiteTerms always pass the scope gate, even if no doc lists them.
+	staticSiteTerms = []string{
+		"sumrak", "сумрак", "darkroom", "content studio", "media manipulator", "creatv",
+		"people inc", "nimbus", "liftoff", "vungle", "prebid", "gam", "gma", "mirror",
+		"winny", "llms", "odin", "double raven",
+	}
+
+	// genericKeywords appear in many docs but say nothing about scope by themselves.
+	genericKeywords = map[string]struct{}{
+		"home": {}, "about": {}, "blog": {}, "contact": {}, "projects": {}, "portfolio": {},
+		"route": {}, "page": {}, "support": {}, "download": {}, "downloads": {}, "privacy": {},
+		"policy": {}, "terms": {}, "email": {}, "resume": {}, "apps": {}, "jobs": {},
+		"articles": {}, "experience": {}, "aws": {}, "python": {}, "react": {}, "typescript": {},
+		"node.js": {}, "redis": {}, "postgres": {}, "postgresql": {}, "docker": {}, "kubernetes": {},
+		"firebase": {}, "vercel": {}, "java": {}, "kotlin": {}, "swift": {}, "golang": {},
+		"current": {}, "available": {}, "your": {}, "have": {}, "please": {}, "questions": {},
 	}
 
 	pageScopedPhrases = []string{
@@ -342,10 +349,14 @@ func (s *ChatService) StreamChat(ctx context.Context, request domain.ChatRequest
 	request.Messages = messages
 
 	pages, pagesErr := s.siteCatalog.pages(ctx)
+	facts := ""
+	if factsPage, ok := content.FactsPage(pages); ok {
+		facts = factsPage.Content
+	}
 	relevantPages := rankRelevantPages(request, pages)
 	preferredLanguage := inferPreferredResponseLanguage(request)
 	browserLanguageHint := supportedBrowserLanguageHint(request.BrowserLanguage)
-	if !isWebsiteQuestion(request, relevantPages, preferredLanguage, browserLanguageHint) {
+	if !isWebsiteQuestion(request, relevantPages, siteTerms(pages), preferredLanguage, browserLanguageHint) {
 		return s.streamStaticReply(onEvent, catalog.OutOfScopeReply())
 	}
 
@@ -361,6 +372,7 @@ func (s *ChatService) StreamChat(ctx context.Context, request domain.ChatRequest
 	settings.SystemPrompt = catalog.BuildSystemPrompt(
 		request,
 		relevantPages,
+		facts,
 		preferredLanguage,
 		browserLanguageHint,
 	)
@@ -458,14 +470,14 @@ func sanitizeMessages(messages []domain.Message) []domain.Message {
 	return out
 }
 
-func isWebsiteQuestion(request domain.ChatRequest, relevant []domain.SitePage, preferredLanguage, browserLanguageHint string) bool {
+func isWebsiteQuestion(request domain.ChatRequest, relevant []domain.SitePage, docTerms []string, preferredLanguage, browserLanguageHint string) bool {
 	message := strings.TrimSpace(lastUserMessage(request.Messages))
 	if message == "" {
 		return false
 	}
 	messageLower := strings.ToLower(message)
 
-	if containsAnySubstring(messageLower, websiteTerms) {
+	if containsAnySubstring(messageLower, websiteTerms) || containsAnySubstring(messageLower, docTerms) {
 		return true
 	}
 
@@ -492,6 +504,37 @@ func isWebsiteQuestion(request domain.ChatRequest, relevant []domain.SitePage, p
 	}
 
 	return false
+}
+
+// siteTerms is every "## Search Keywords" entry across the loaded docs, plus
+// staticSiteTerms. Generic one-word keywords are skipped so ordinary questions
+// ("what is a page?") don't pass the gate on their own.
+func siteTerms(pages []domain.SitePage) []string {
+	seen := map[string]struct{}{}
+	terms := make([]string, 0, 256)
+	add := func(term string) {
+		term = strings.ToLower(strings.TrimSpace(term))
+		if len([]rune(term)) < 4 {
+			return
+		}
+		if _, generic := genericKeywords[term]; generic {
+			return
+		}
+		if _, dup := seen[term]; dup {
+			return
+		}
+		seen[term] = struct{}{}
+		terms = append(terms, term)
+	}
+	for _, page := range pages {
+		for _, keyword := range page.Keywords {
+			add(keyword)
+		}
+	}
+	for _, term := range staticSiteTerms {
+		add(term)
+	}
+	return terms
 }
 
 func lastUserMessage(messages []domain.Message) string {
@@ -640,6 +683,9 @@ func rankRelevantPages(request domain.ChatRequest, pages []domain.SitePage) []do
 
 	scored := make([]scoredPage, 0, len(pages))
 	for _, page := range pages {
+		if page.Path == "/_docs/facts" || page.Path == "/_docs/sitemap" {
+			continue
+		}
 		score := 0
 		if currentPath != "" && samePath(page.Path, currentPath) {
 			score += 100
