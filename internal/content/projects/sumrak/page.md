@@ -64,7 +64,10 @@ User data never holds a foreign key into content. Items reference packs by stabl
 
 Most of Сумрак's audio is read in my own voice. I created two professional voice clones on ElevenLabs: **Mr. Wintrow**, which narrates the stories, and **Obsidian**, a character voice that is starting to appear in the stories as well. The other characters use custom voices designed for each cast.
 
-Both voices are public in the ElevenLabs voice library, so you can use them in your own projects.
+Both voices are public in the ElevenLabs voice library, so you can use them in your own projects. The two short scenes below were rendered on Eleven v4 with its audio tags, with sound effects and an ambient score generated on ElevenLabs too.
+
+- audio: Mr. Wintrow: The Last Exit: A night-drive horror narration: calm, amused, terrified, breathless, broken, and back. — https://www.winapps.io/sumrak/voices/mr-wintrow-demo.opus
+- audio: Obsidian: The Tower at Vaelmoor: A necromancer duels his old teacher, Cornelius (an ElevenLabs library voice), in a storm. — https://www.winapps.io/sumrak/voices/obsidian-demo.opus
 
 - [Mr. Wintrow (narration) on ElevenLabs](https://elevenlabs.io/app/voice-lab/share/437b6c647ef328e2535d05d610a2cc1f1813a37ba51d58b502d655f8e1ed97f7/HQ4Xi3gPf8Q6bJUlao6z)
 - [Obsidian (characters) on ElevenLabs](https://elevenlabs.io/app/voice-lab/share/98f56dc987320f0d940cd99d45980b44a5b07a67a621c0f0cc4f091d2087b97a/QjEdRoRdZC2i3ncmFpNy)
