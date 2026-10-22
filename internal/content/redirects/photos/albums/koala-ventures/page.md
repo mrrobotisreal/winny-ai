@@ -11,8 +11,6 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 - These routes are redirect helpers to Google Photos albums; they are not fully hosted album pages.
 - This route exists to redirect visitors to the external album.
 - This page is unchanged by the 2026 site revamp.
-- This page is unchanged by the 2026 site revamp.
-- This page is unchanged by the 2026 site revamp.
 
 ## Search Keywords
 `redirects/photos/albums/koala-ventures`, `Photo`, `Album`, `Redirect`, `Koala`, `Ventures`, `Branded`, `Google`, `Photos`

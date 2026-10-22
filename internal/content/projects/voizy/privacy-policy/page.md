@@ -11,8 +11,6 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 - Project pages usually contain the deepest technical and product details for WinApps.io offerings.
 - When the visitor asks about tech stack, architecture, features, or live demos, these pages are often the best sources.
 - This page is unchanged by the 2026 site revamp.
-- This page is unchanged by the 2026 site revamp.
-- This page is unchanged by the 2026 site revamp.
 
 ## Search Keywords
 `projects/voizy/privacy-policy`, `Voizy`, `Android`, `Projects`, `Privacy`, `Policy`, `Last`, `updated`, `March`, `12th`, `2025`, `Coming`, `soon`, `Contact`, `contact@winapps.io`

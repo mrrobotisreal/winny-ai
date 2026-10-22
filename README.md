@@ -46,7 +46,7 @@ cd /home/mwintrow/winapps/winny-ai/winny-ai
 git pull
 go build -o assistant-api ./cmd/assistant-api
 ollama create winny-ai-v1 -f Modelfile.winny-ai-v1   # only if the Modelfile changed
-sudo systemctl restart <winny-service-name>          # TODO(Mitch): confirm the unit name
+sudo systemctl restart winapps-winny-ai
 curl -s https://winny-ai.winapps.dev/api/v1/health
 ```
 

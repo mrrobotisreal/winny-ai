@@ -10,8 +10,6 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 ## Winny Notes
 - Product pages are customer-facing and may overlap with project pages while emphasizing support, policy, and end-user information.
 - This page is unchanged by the 2026 site revamp.
-- This page is unchanged by the 2026 site revamp.
-- This page is unchanged by the 2026 site revamp.
 
 ## Search Keywords
 `products/journey-app/privacy-policy`, `Journey`, `App.me`, `Privacy`, `Policy`, `Projects`, `JourneyApp.me`, `Available`, `iOS`, `Android`, `Last`, `updated`, `August`, `4th`, `2025`, `take`, `your`, `seriously`, `explains`, `how`

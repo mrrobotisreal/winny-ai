@@ -11,8 +11,6 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 - Product pages are customer-facing and may overlap with project pages while emphasizing support, policy, and end-user information.
 - Use this page when someone asks about Journey App support categories, file upload limits, or where form submissions are sent.
 - This page is unchanged by the 2026 site revamp.
-- This page is unchanged by the 2026 site revamp.
-- This page is unchanged by the 2026 site revamp.
 
 ## Search Keywords
 `products/journey-app/contact/form`, `Journey`, `App.me`, `Support`, `Projects`, `JourneyApp.me`, `Contact`, `Form`, `Submit`, `your`, `request`, `feature`, `suggestion`, `feedback`, `Back`, `Info`, `Fill`, `out`, `below`, `get`

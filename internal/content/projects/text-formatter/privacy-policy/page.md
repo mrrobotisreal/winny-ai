@@ -12,8 +12,6 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 - When the visitor asks about tech stack, architecture, features, or live demos, these pages are often the best sources.
 - This policy page is especially useful for privacy, permissions, and extension data-collection questions.
 - This page is unchanged by the 2026 site revamp.
-- This page is unchanged by the 2026 site revamp.
-- This page is unchanged by the 2026 site revamp.
 
 ## Search Keywords
 `projects/text-formatter/privacy-policy`, `Privacy`, `Policy`, `Last`, `Updated`, `June`, `2025`, `Bottom`, `Line`, `Text`, `Formatter`, `doesn`, `collect`, `store`, `transmit`, `any`, `your`, `personal`, `data`, `Everything`

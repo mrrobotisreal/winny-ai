@@ -11,8 +11,6 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 - These pages are operational download launchers and not long-form documentation pages.
 - Use this route when someone asks how to access the iOS test build for MP3 Drive Player.
 - This page is unchanged by the 2026 site revamp.
-- This page is unchanged by the 2026 site revamp.
-- This page is unchanged by the 2026 site revamp.
 
 ## Search Keywords
 `download/mp3-drive-player/ios`, `Download`, `MP3`, `Drive`, `Player`, `iOS`, `route`, `immediately`, `downloads`, `IPA`, `build`, `hosted`, `Cloudflare`, `uses`, `short`, `branded`, `countdown`, `then`, `redirects`, `back`

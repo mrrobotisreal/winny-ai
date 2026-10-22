@@ -11,8 +11,6 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 - Project pages usually contain the deepest technical and product details for WinApps.io offerings.
 - When the visitor asks about tech stack, architecture, features, or live demos, these pages are often the best sources.
 - This page is unchanged by the 2026 site revamp.
-- This page is unchanged by the 2026 site revamp.
-- This page is unchanged by the 2026 site revamp.
 
 ## Search Keywords
 `projects/voizy/support`, `Voizy`, `Android`, `Projects`, `Support`, `Product`, `you`, `have`, `any`, `questions`, `need`, `please`, `contact`, `mitchellwintrow@gmail.com`, `are`, `here`, `help`, `should`, `receive`, `response`

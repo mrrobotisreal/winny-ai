@@ -12,8 +12,6 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 - When the visitor asks about tech stack, architecture, features, or live demos, these pages are often the best sources.
 - This page primarily points visitors to a Notion-hosted documentation experience.
 - This page is unchanged by the 2026 site revamp.
-- This page is unchanged by the 2026 site revamp.
-- This page is unchanged by the 2026 site revamp.
 
 ## Search Keywords
 `projects/voizy/documentation`, `Voizy`, `Android`, `Projects`, `Documentation`, `Official`
