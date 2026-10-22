@@ -1,29 +1,35 @@
-# Contact Me
+# Contact
 
 - Route: `/contact`
-- Source page: `app/contact/page.tsx`
-- Canonical URL: `https://winapps.io/contact`
+- Canonical URL: `https://www.winapps.io/contact`
 - Category: `contact`
 
 ## Purpose
-Backend content mirror for Winny so the assistant can answer questions about this page quickly and accurately.
+Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
-- Use this page for direct contact methods, social links, and where visitors should reach Mitch.
+- Email is the fastest way to reach Mitch: mitchellwintrow@gmail.com. Resume downloads are on this page.
 
 ## Search Keywords
-`contact`, `Email`, `mitchellwintrow@gmail.com`, `GitHub`, `Find`, `mrrobotisreal`, `LinkedIn`, `Mitchell`, `Wintrow`, `Twitter`, `mitchwintrow`, `Medium`, `Read`, `articles`, `90mitchwintrow`, `YouTube`, `Watch`, `videos`, `Mitch`
-
-## Important Emails
-- `mitchellwintrow@gmail.com`
+`contact`, `email`, `resume`, `hire`, `LinkedIn`, `GitHub`, `Medium`, `X`, `YouTube`, `Linktree`
 
 ## Important Links
-- https://github.com/mrrobotisreal
+- mailto:mitchellwintrow@gmail.com
+- https://www.winapps.io/MitchellWintrow_Resume.pdf
 - https://www.linkedin.com/in/mitchell-wintrow/
-- https://x.com/mitchwintrow
+- https://github.com/mrrobotisreal
 - https://medium.com/@90mitchwintrow
+- https://x.com/mitchwintrow
 - https://www.youtube.com/@mitchwintrow
+- https://linktr.ee/wintrow
 
 ## Page Content Snapshot
 
-Contact Me Email Email me at: mitchellwintrow@gmail.com → GitHub Find me on GitHub at: mrrobotisreal → LinkedIn Find me on LinkedIn at: Mitchell Wintrow → X (Twitter) Find me on X (Twitter) at: @mitchwintrow → Medium Read my articles on Medium at: @90mitchwintrow → YouTube Watch my videos on YouTube at: Mitch Wintrow →
+Email is the fastest way to reach me. My resume is below.
+Email: mitchellwintrow@gmail.com
+LinkedIn: https://www.linkedin.com/in/mitchell-wintrow/
+GitHub: https://github.com/mrrobotisreal
+Medium: https://medium.com/@90mitchwintrow
+X: https://x.com/mitchwintrow
+YouTube: https://www.youtube.com/@mitchwintrow
+Linktree: https://linktr.ee/wintrow

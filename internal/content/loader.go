@@ -66,6 +66,7 @@ func LoadSitePages(cfg config.Config) ([]domain.SitePage, error) {
 			Summary:    truncateString(plainText, 900),
 			Content:    truncateString(markdown, 5000),
 			Tokens:     tokenize(strings.Join([]string{title, route, plainText}, " ")),
+			Keywords:   extractKeywords(markdown),
 		})
 		return nil
 	})
@@ -133,6 +134,42 @@ func routeFromRelativePath(relativePath string) string {
 		return "/" + route
 	}
 	return "/_docs/" + strings.TrimSuffix(relativePath, ".md")
+}
+
+// extractKeywords returns the backtick-quoted entries of the "## Search Keywords"
+// section, lowercased and de-duplicated.
+func extractKeywords(markdown string) []string {
+	_, after, ok := strings.Cut(markdown, "## Search Keywords")
+	if !ok {
+		return nil
+	}
+	if next := strings.Index(after, "\n## "); next >= 0 {
+		after = after[:next]
+	}
+	seen := map[string]struct{}{}
+	var out []string
+	for _, part := range strings.Split(after, "`") {
+		keyword := strings.ToLower(strings.TrimSpace(part))
+		if keyword == "" || strings.Trim(keyword, ", \n") == "" {
+			continue
+		}
+		if _, dup := seen[keyword]; dup {
+			continue
+		}
+		seen[keyword] = struct{}{}
+		out = append(out, keyword)
+	}
+	return out
+}
+
+// FactsPage returns the generated facts doc (internal/content/facts.md), if loaded.
+func FactsPage(pages []domain.SitePage) (domain.SitePage, bool) {
+	for _, page := range pages {
+		if page.Path == "/_docs/facts" {
+			return page, true
+		}
+	}
+	return domain.SitePage{}, false
 }
 
 func extractTitle(markdown, relativePath string) string {

@@ -1,25 +1,25 @@
 # Journey App.me Contact
 
 - Route: `/products/journey-app/contact`
-- Source page: `app/products/journey-app/contact/page.tsx`
-- Canonical URL: `https://winapps.io/products/journey-app/contact`
+- Canonical URL: `https://www.winapps.io/products/journey-app/contact`
 - Category: `products`
 
 ## Purpose
-Backend content mirror for Winny so the assistant can answer questions about this page quickly and accurately.
+Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
 - Product pages are customer-facing and may overlap with project pages while emphasizing support, policy, and end-user information.
+- This page is unchanged by the 2026 site revamp.
 
 ## Search Keywords
 `products/journey-app/contact`, `Journey`, `App.me`, `Contact`, `Projects`, `JourneyApp.me`, `Get`, `touch`, `support`, `questions`, `feedback`, `love`, `hear`, `you`, `Whether`, `have`, `need`, `want`, `share`, `about`
 
 ## Important Links
-- https://winapps.io/
-- https://winapps.io/projects
-- https://winapps.io/products/journey-app/contact/form
-- https://winapps.io/products/journey-app/privacy-policy
-- https://winapps.io/products/journey-app/terms-of-use
+- https://www.winapps.io/
+- https://www.winapps.io/projects
+- https://www.winapps.io/products/journey-app/contact/form
+- https://www.winapps.io/products/journey-app/privacy-policy
+- https://www.winapps.io/products/journey-app/terms-of-use
 
 ## Page Content Snapshot
 

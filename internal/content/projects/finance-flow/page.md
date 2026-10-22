@@ -1,25 +1,55 @@
 # Finance Flow
 
 - Route: `/projects/finance-flow`
-- Source page: `app/projects/finance-flow/page.tsx`
-- Canonical URL: `https://winapps.io/projects/finance-flow`
+- Canonical URL: `https://www.winapps.io/projects/finance-flow`
 - Category: `projects`
 
 ## Purpose
-Backend content mirror for Winny so the assistant can answer questions about this page quickly and accurately.
+Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
-- Project pages usually contain the deepest technical and product details for WinApps.io offerings.
-- When the visitor asks about tech stack, architecture, features, or live demos, these pages are often the best sources.
+- Status: shipped; Creator, sole engineer; Sep 2025 – Feb 2026.
+- Never state dollar figures or revenue numbers.
 
 ## Search Keywords
-`projects/finance-flow`, `Finance`, `Flow`, `Projects`, `Position`, `Fullstack`, `Engineer`, `Front`, `End`, `Back`, `Start`, `Dates`, `9/28/2025`, `Present`, `Responsibilities`, `Some`, `sole`, `project`, `include`, `Design`
+`projects/finance-flow`, `Finance Flow`, `Node.js`, `Supabase`, `Vite`, `TypeScript`, `React`, `shadcn/ui`, `Radix UI`, `Tailwind CSS`, `Let's Encrypt`, `Vercel`
 
 ## Important Links
-- https://winapps.io/
-- https://winapps.io/projects
-- https://www.financeflow.link/
+- https://www.financeflow.link
 
 ## Page Content Snapshot
 
-Home / Projects / Finance Flow Finance Flow Position Fullstack Engineer (Front End, Back End) Start & End Dates 9/28/2025 - Present Responsibilities Some of my responsibilities as the sole engineer on this project include: Design the entire backend architecture of the application from scratch. Build an intuitive, engaging, fast, and efficient UI. Deploy both backend and frontend on custom non-cloud servers, properly configured with TLS/SSL, rate limiting, and other security measures. Contributions Some of my contributions in this project include: Build the Backend for the App Build the Frontend for the App Evidence You can try it for free now ! Web
+# Finance Flow
+
+> Budget planning and investment goals with AI insights.
+
+- Status: shipped
+- Role: Creator, sole engineer
+- Dates: Sep 2025 – Feb 2026
+- Page: https://www.winapps.io/projects/finance-flow
+
+Finance Flow is a web app for tracking spending, saving, investments and stocks. It gives personalized AI insights into your spending and saving habits, shows how your portfolio and the market are doing, and makes personalized stock recommendations.
+
+## Role
+
+I was the sole engineer, from the backend architecture to deployment.
+
+- Designed the backend architecture from scratch.
+- Built a fast, focused UI.
+- Deployed the backend and frontend with TLS, rate limiting and other security measures.
+
+## Backend
+
+The API is Node.js on Supabase, deployed on my own non-cloud servers with TLS from Let's Encrypt, HTTP redirected to HTTPS, and rate limiting.
+
+## Frontend
+
+The web client is Vite, TypeScript and React with shadcn/ui, Radix UI and Tailwind CSS, deployed on Vercel.
+
+## Tech
+
+Node.js, Supabase, Vite, TypeScript, React, shadcn/ui, Radix UI, Tailwind CSS, Let's Encrypt, Vercel
+
+## Links
+
+- [Visit financeflow.link](https://www.financeflow.link)

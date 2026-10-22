@@ -1,67 +1,31 @@
-# Welcome to Win Apps !
+# Mitch Wintrow — Senior Software Engineer
 
 - Route: `/`
-- Source page: `app/page.tsx`
-- Canonical URL: `https://winapps.io`
+- Canonical URL: `https://www.winapps.io`
 - Category: `home`
 
 ## Purpose
-Backend content mirror for Winny so the assistant can answer broad website questions quickly and accurately.
+Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
-- Use this page for broad questions about what WinApps.io contains, what Mitchell is focused on now, and where visitors should navigate next.
-- CreaTV Ltd. is Mitchell's primary mission outside of work and should be prioritized when users ask what he is building now.
-- Mitchell also works on the People Inc. mobile app ad revenue team and is a Lead Senior Software Engineer & Founding Engineer at Mirror Inc.
+- Home page: hero, the Сумрак feature, flagship projects, work history, more projects, writing, skills.
+- What Mitch is building now: Сумрак. Flagships: Media Manipulator and CreaTV.
 
 ## Search Keywords
-`WinApps.io`, `Mitchell Wintrow`, `CreaTV`, `creatv.io`, `Mirror Inc`, `Mirror`, `trymirror.ai`, `People Inc`, `mobile ad revenue`, `AI interview platform`, `language learning`, `Russian`, `Ukrainian`, `Hebrew`, `Farsi`, `Modern Standard Arabic`, `Vietnamese`, `Mandarin Chinese`, `Spanish`, `AI server`, `home lab`, `full tower server`, `Alina`, `Ukraine`, `DJI Mini 4 Pro`, `drone`
+`home`, `Mitchell Wintrow`, `Mitch Wintrow`, `WinApps`, `Сумрак`, `Media Manipulator`, `CreaTV`, `Finance Flow`, `MP3 Drive Player`, `Journey App`, `Voizy`
 
 ## Important Links
-- https://www.creatv.io
-- https://trymirror.ai
-- https://winapps.io/portfolio/mirror
-- https://www.linkedin.com/in/mitchell-wintrow/
-- https://github.com/mrrobotisreal
-- https://medium.com/@90mitchwintrow
-- https://x.com/mitchwintrow
-- https://www.youtube.com/@mitchwintrow
-- https://linktr.ee/wintrow
-- https://winapps.io/projects/creatv
-- https://winapps.io/portfolio/people-inc
-- https://winapps.io/portfolio/double-raven
-- https://winapps.io/portfolio/amazon-connect
-- https://winapps.io/portfolio/vmware
-- https://winapps.io/projects/mp3-drive-player
-- https://github.com/mrrobotisreal/JourneyAppWeb
-- https://winapps.io/projects/journey-app
-- https://winapps.io/projects/voizy
-- https://winapps.io/projects/aspire-to-expand
-- https://www.media-manipulator.com
-- https://ui.qr-gen.winapps.io
-- https://ui.formatter.winapps.io
-- https://www.rss-today.com
+- https://www.winapps.io/projects/sumrak
+- https://www.winapps.io/projects
+- https://www.winapps.io/portfolio
+- https://www.winapps.io/contact
 
 ## Page Content Snapshot
 
-WinApps.io is Mitchell Wintrow's personal website and project hub.
+I build mobile ad tech for the People app by day and ship my own products at night: a browser video editor, a creator video platform, and a Russian-learning app built for one student.
 
-Mitchell is a Senior Software Engineer focused on mobile, web, AI, and distributed backend systems. The site highlights that he currently works on the People Inc. mobile app ad revenue team, that his primary mission outside of work is building CreaTV Ltd. as a creator-first UGC video platform like YouTube but better, and that he is also a Lead Senior Software Engineer & Founding Engineer at Mirror Inc., an AI interview platform for businesses and candidates.
+I'm a senior software engineer who works across mobile, web, and backend systems. At People Inc. I'm on the People mobile app's ad revenue team, where I own the prebidding integrations and the ad configuration backend.
 
-High-interest profile details represented across the site:
-- Deep interest in foreign language learning and building software that helps people learn faster, communicate across cultures, and connect around the world
-- Studies Russian, Ukrainian, Hebrew, Farsi, Modern Standard Arabic, Vietnamese, Mandarin Chinese, and Spanish
-- Runs custom AI models locally on a custom full tower server / workstation and home-lab setup
-- Loves traveling with his fiancée Alina, who is from Ukraine
-- Loves filming scenic drone flyovers with a DJI Mini 4 Pro
+Outside work I build products end to end. Media Manipulator is a browser media toolkit with a multi-track video editor called Darkroom, running on GPU servers I operate myself. CreaTV is a creator-first video platform I founded. Сумрак (Sumrak) is a Russian-learning app I built for myself, and it is the most complete piece of software I've made.
 
-Primary routes linked from the homepage:
-- `/about`
-- `/portfolio`
-- `/portfolio/people-inc`
-- `/portfolio/mirror`
-- `/projects/creatv`
-- `/projects/media-manipulator-pro`
-- `/projects/journey-app`
-- `/projects/voizy`
-- `/blog`
-- `/contact`
+I'm learning Russian seriously, with Ukrainian and Hebrew alongside it. Most of what I build outside work exists to help me learn faster.

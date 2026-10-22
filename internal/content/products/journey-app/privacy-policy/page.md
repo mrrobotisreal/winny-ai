@@ -1,25 +1,22 @@
 # Journey App.me Privacy Policy
 
 - Route: `/products/journey-app/privacy-policy`
-- Source page: `app/products/journey-app/privacy-policy/page.tsx`
-- Canonical URL: `https://winapps.io/products/journey-app/privacy-policy`
+- Canonical URL: `https://www.winapps.io/products/journey-app/privacy-policy`
 - Category: `products`
 
 ## Purpose
-Backend content mirror for Winny so the assistant can answer questions about this page quickly and accurately.
+Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
 - Product pages are customer-facing and may overlap with project pages while emphasizing support, policy, and end-user information.
+- This page is unchanged by the 2026 site revamp.
 
 ## Search Keywords
 `products/journey-app/privacy-policy`, `Journey`, `App.me`, `Privacy`, `Policy`, `Projects`, `JourneyApp.me`, `Available`, `iOS`, `Android`, `Last`, `updated`, `August`, `4th`, `2025`, `take`, `your`, `seriously`, `explains`, `how`
 
-## Important Emails
-- `mitchellwintrow@gmail.com`
-
 ## Important Links
-- https://winapps.io/
-- https://winapps.io/projects
+- https://www.winapps.io/
+- https://www.winapps.io/projects
 
 ## Page Content Snapshot
 

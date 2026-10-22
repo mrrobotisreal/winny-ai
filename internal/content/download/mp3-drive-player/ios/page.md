@@ -1,16 +1,16 @@
 # Download MP3 Drive Player for iOS
 
 - Route: `/download/mp3-drive-player/ios`
-- Source page: `app/download/mp3-drive-player/ios/page.tsx`
-- Canonical URL: `https://winapps.io/download/mp3-drive-player/ios`
+- Canonical URL: `https://www.winapps.io/download/mp3-drive-player/ios`
 - Category: `downloads`
 
 ## Purpose
-Backend content mirror for Winny so the assistant can answer questions about this page quickly and accurately.
+Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
 - These pages are operational download launchers and not long-form documentation pages.
 - Use this route when someone asks how to access the iOS test build for MP3 Drive Player.
+- This page is unchanged by the 2026 site revamp.
 
 ## Search Keywords
 `download/mp3-drive-player/ios`, `Download`, `MP3`, `Drive`, `Player`, `iOS`, `route`, `immediately`, `downloads`, `IPA`, `build`, `hosted`, `Cloudflare`, `uses`, `short`, `branded`, `countdown`, `then`, `redirects`, `back`

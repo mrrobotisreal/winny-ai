@@ -1,16 +1,16 @@
 # Download MP3 Drive Player for Android
 
 - Route: `/download/mp3-drive-player/android`
-- Source page: `app/download/mp3-drive-player/android/page.tsx`
-- Canonical URL: `https://winapps.io/download/mp3-drive-player/android`
+- Canonical URL: `https://www.winapps.io/download/mp3-drive-player/android`
 - Category: `downloads`
 
 ## Purpose
-Backend content mirror for Winny so the assistant can answer questions about this page quickly and accurately.
+Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
 - These pages are operational download launchers and not long-form documentation pages.
 - Use this page when someone asks where to download the Android test build for MP3 Drive Player.
+- This page is unchanged by the 2026 site revamp.
 
 ## Search Keywords
 `download/mp3-drive-player/android`, `Download`, `MP3`, `Drive`, `Player`, `Android`, `route`, `immediately`, `downloads`, `APK`, `target`, `hosted`, `Cloudflare`, `then`, `redirects`, `back`, `homepage`, `after`, `brief`, `branded`

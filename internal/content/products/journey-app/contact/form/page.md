@@ -1,24 +1,24 @@
 # Journey App.me Support
 
 - Route: `/products/journey-app/contact/form`
-- Source page: `app/products/journey-app/contact/form/page.tsx`
-- Canonical URL: `https://winapps.io/products/journey-app/contact/form`
+- Canonical URL: `https://www.winapps.io/products/journey-app/contact/form`
 - Category: `products`
 
 ## Purpose
-Backend content mirror for Winny so the assistant can answer questions about this page quickly and accurately.
+Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
 - Product pages are customer-facing and may overlap with project pages while emphasizing support, policy, and end-user information.
 - Use this page when someone asks about Journey App support categories, file upload limits, or where form submissions are sent.
+- This page is unchanged by the 2026 site revamp.
 
 ## Search Keywords
 `products/journey-app/contact/form`, `Journey`, `App.me`, `Support`, `Projects`, `JourneyApp.me`, `Contact`, `Form`, `Submit`, `your`, `request`, `feature`, `suggestion`, `feedback`, `Back`, `Info`, `Fill`, `out`, `below`, `get`
 
 ## Important Links
-- https://winapps.io/
-- https://winapps.io/projects
-- https://winapps.io/products/journey-app/contact
+- https://www.winapps.io/
+- https://www.winapps.io/projects
+- https://www.winapps.io/products/journey-app/contact
 
 ## Page Content Snapshot
 
