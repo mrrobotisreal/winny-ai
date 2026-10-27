@@ -112,6 +112,7 @@ Expo, React Native, TypeScript, SQLite, Drizzle, Kotlin, sherpa-onnx, Piper, Whi
 
 ## Media
 
+- video: Сумрак promo film: a review session, the 60-second quest, the hotel lift to floor 1, a spoken bank scenario, a narrated horror story and a word unpacked into its forms, ending on the crimson moon and the Сумрак wordmark — https://pub-5e3f5f69f6bd4f2fb6bc741e03f34851.r2.dev/sumrak/sumrak-promo-final.mp4
 - image: Today screen with goal rings, a finished quest and 95 cards due — https://pub-5e3f5f69f6bd4f2fb6bc741e03f34851.r2.dev/sumrak/Screenshot_001_540.jpg
 - video: Reading a story with narration, word highlighting and lookups — https://pub-5e3f5f69f6bd4f2fb6bc741e03f34851.r2.dev/sumrak/Reading_540.mp4
 - video: A review session moving through cloze, sentence builder and other game modes — https://pub-5e3f5f69f6bd4f2fb6bc741e03f34851.r2.dev/sumrak/Review_540_trimmed.mp4

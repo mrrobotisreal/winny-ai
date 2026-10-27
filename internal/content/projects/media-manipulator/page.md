@@ -38,7 +38,7 @@ The AI tools (restoration, upscaling, transcription, document scanning, face and
 | Metric | Value |
 | --- | --- |
 | Tool pages | 75+ |
-| Locales | 9 |
+| Locales | 18 |
 | Transition types | 15 |
 | Metadata tags catalogued | 1,800+ |
 | Blend modes | 8 |
@@ -55,7 +55,7 @@ Media Manipulator started as a converter and became a media workbench. It has 75
 
 Motion, an SVG animation editor in beta, sits beside Darkroom: it turns an SVG into layers on a keyframe timeline and exports animated SVG, Lottie, React, JavaScript, Flutter or GIF straight from the browser.
 
-The site is fully translated into nine languages, including a right-to-left one, with a key-parity test so no translation can silently lag. It is a CreaTV Ltd. product, and Darkroom is embedded directly in CreaTV Studio.
+The site is fully translated into eighteen languages (English, Ukrainian, Russian, Hebrew, German, Spanish for Spain and Latin America, French, Italian, Portuguese for Portugal and Brazil, Japanese, Simplified and Traditional Chinese, Korean, Arabic, Hindi and Vietnamese), two of them right to left, with a key-parity test so no translation can silently lag. It is a CreaTV Ltd. product, and Darkroom is embedded directly in CreaTV Studio.
 
 ## Darkroom: a timeline editor in the browser
 
@@ -125,7 +125,7 @@ Pro sits above Premium at 15 USD or 15 EUR a month, or 150 USD or 150 EUR a year
 
 ## Frontend
 
-Next.js App Router on Vercel, React 19, Tailwind 4, Radix, TanStack Query, Zustand and Zod. Nine translated locales served as i18next shards per feature, hreflang alternates in the sitemap, consent-gated first-party analytics with its own admin dashboard (revenue, activation and return, and a Darkroom page with its funnel, feature use, editor performance and export health), a public changelog with an RSS feed, an ads architecture that is off by default and audited in CI, and per-locale translator deployments where a hired translator edits the live page in context and submits a reviewed GitHub pull request.
+Next.js App Router on Vercel, React 19, Tailwind 4, Radix, TanStack Query, Zustand and Zod. Eighteen translated locales served as i18next shards per feature, hreflang alternates in the sitemap, consent-gated first-party analytics with its own admin dashboard (revenue, activation and return, and a Darkroom page with its funnel, feature use, editor performance and export health), a public changelog with an RSS feed, an ads architecture that is off by default and audited in CI, and per-locale translator deployments where a hired translator edits the live page in context and submits a reviewed GitHub pull request.
 
 ## Tech
 
@@ -138,7 +138,7 @@ Go, Gin, Postgres, Redis, FFmpeg, ImageMagick, NVENC, Next.js, React, TypeScript
 
 ## Media
 
-- video: Media Manipulator launch film: one video no longer needs five apps, Face Blur hides a face in a photo, Darkroom edits a waterfall clip, and the aperture logo ends on media-manipulator.com — https://pub-5e3f5f69f6bd4f2fb6bc741e03f34851.r2.dev/sumrak/MM_Launch_v2.mp4
+- video: Media Manipulator launch film: a photo converted to sepia, a background removed, GPS and 120 metadata tags stripped, a face blurred, an SVG animated in Motion and a clip edited in Darkroom, ending on the aperture logo and media-manipulator.com — https://pub-5e3f5f69f6bd4f2fb6bc741e03f34851.r2.dev/media-manipulator/MM_Launch_90.mp4
 - image: Media Manipulator home page: the upload panel, quick-tool chips and the Darkroom entry point — https://www.winapps.io/media-manipulator/home.webp
 - image: Tool catalogue listing Darkroom first, then image tools such as compress, resize and background removal — https://www.winapps.io/media-manipulator/tools.webp
 - image: Darkroom landing page with its quick guide to the multi-track timeline, supported media and export — https://www.winapps.io/media-manipulator/darkroom.webp
