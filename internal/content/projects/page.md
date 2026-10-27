@@ -12,11 +12,11 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 - Only the projects listed here exist; if asked about any other project, say it is not on the site.
 
 ## Search Keywords
-`projects`, `apps`, `Сумрак`, `Media Manipulator`, `CreaTV`, `Finance Flow`, `MP3 Drive Player`, `Journey App`, `Voizy`, `Quantum River`, `Text Formatter`, `Aspire To Expand`
+`projects`, `apps`, `Media Manipulator`, `Сумрак`, `CreaTV`, `Finance Flow`, `MP3 Drive Player`, `Journey App`, `Voizy`, `Quantum River`, `Text Formatter`, `Aspire To Expand`
 
 ## Important Links
-- https://www.winapps.io/projects/sumrak
 - https://www.winapps.io/projects/media-manipulator
+- https://www.winapps.io/projects/sumrak
 - https://www.winapps.io/projects/creatv
 - https://www.winapps.io/projects/finance-flow
 - https://www.winapps.io/projects/mp3-drive-player
@@ -25,8 +25,8 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 
 ## Page Content Snapshot
 
-- Сумрак (Sumrak) (hero, active): An offline-first Russian-learning app built for one student: me.
-- Media Manipulator (flagship, shipped): 65+ browser media tools and Darkroom, a multi-track video editor, on GPU servers I run myself.
+- Media Manipulator (hero, shipped): 75+ browser media tools, a multi-track video editor and an SVG animator, on GPU servers I run myself.
+- Сумрак (Sumrak) (flagship, active): An offline-first Russian-learning app built for one student: me.
 - CreaTV (flagship, active): A creator-first video platform, built as twenty-plus services.
 - Finance Flow (standard, shipped): Budget planning and investment goals with AI insights.
 - MP3 Drive Player (standard, shipped): A language-learning audio player for Pimsleur-style courses, with stats, games and chat.

@@ -8,14 +8,14 @@
 Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
-- Home page: hero, the Сумрак feature, flagship projects, work history, more projects, writing, skills.
-- What Mitch is building now: Сумрак. Flagships: Media Manipulator and CreaTV.
+- Home page: hero, the Media Manipulator feature with its launch film, flagship projects, work history, more projects, writing, skills.
+- What Mitch is building now: Media Manipulator. Flagships: Сумрак and CreaTV.
 
 ## Search Keywords
-`home`, `Mitchell Wintrow`, `Mitch Wintrow`, `WinApps`, `Сумрак`, `Media Manipulator`, `CreaTV`, `Finance Flow`, `MP3 Drive Player`, `Journey App`, `Voizy`
+`home`, `Mitchell Wintrow`, `Mitch Wintrow`, `WinApps`, `Media Manipulator`, `Сумрак`, `CreaTV`, `Finance Flow`, `MP3 Drive Player`, `Journey App`, `Voizy`
 
 ## Important Links
-- https://www.winapps.io/projects/sumrak
+- https://www.winapps.io/projects/media-manipulator
 - https://www.winapps.io/projects
 - https://www.winapps.io/portfolio
 - https://www.winapps.io/contact
