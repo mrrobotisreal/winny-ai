@@ -8,7 +8,7 @@
 - Past role (ended Nov 2024): Software Development Engineer (Front End), Amazon Connect Customer Profiles at Amazon Web Services, Aug 2022 – Nov 2024.
 - Past role (ended Aug 2022): Software Engineer at VMware, Jun 2022 – Aug 2022.
 - Past role (ended Jan 2022): Full-stack Software Engineer at Double Raven Solutions LLC, Jun 2020 – Jan 2022.
-- Project: Media Manipulator (shipped): 75+ browser media tools, a multi-track video editor and an SVG animator, on GPU servers I run myself.
+- Project: Media Manipulator (shipped): 95+ browser media tools, a multi-track video editor and an SVG animator, on GPU servers I run myself.
 - Project: Сумрак (Sumrak) (active): An offline-first Russian-learning app built for one student: me.
 - Project: CreaTV (active): A creator-first video platform, built as twenty-plus services.
 - Languages he is learning: Russian (primary focus), Ukrainian (studying), Hebrew (studying).

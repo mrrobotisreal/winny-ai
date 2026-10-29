@@ -25,7 +25,7 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 
 ## Page Content Snapshot
 
-- Media Manipulator (hero, shipped): 75+ browser media tools, a multi-track video editor and an SVG animator, on GPU servers I run myself.
+- Media Manipulator (hero, shipped): 95+ browser media tools, a multi-track video editor and an SVG animator, on GPU servers I run myself.
 - Сумрак (Sumrak) (flagship, active): An offline-first Russian-learning app built for one student: me.
 - CreaTV (flagship, active): A creator-first video platform, built as twenty-plus services.
 - Finance Flow (standard, shipped): Budget planning and investment goals with AI insights.

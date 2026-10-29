@@ -12,7 +12,7 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 - Never state dollar figures or revenue numbers.
 
 ## Search Keywords
-`projects/media-manipulator`, `Media Manipulator`, `Go`, `Gin`, `Postgres`, `Redis`, `FFmpeg`, `ImageMagick`, `NVENC`, `Next.js`, `React`, `TypeScript`, `Tailwind`, `WebGL2`, `Web Audio`, `Zod`, `WebCodecs`, `mediabunny`, `anime.js`, `Stripe`, `Whisper`, `Real-ESRGAN`, `Demucs`, `Ollama`, `S3`, `Firebase Auth`, `Vercel`, `nginx`, `Cloudflare`, `Darkroom`, `Content Studio`, `video editor`, `media converter`, `AI restoration`, `document scan`
+`projects/media-manipulator`, `Media Manipulator`, `Go`, `Gin`, `Postgres`, `Redis`, `FFmpeg`, `ImageMagick`, `NVENC`, `Next.js`, `React`, `TypeScript`, `Tailwind`, `WebGL2`, `Web Audio`, `Zod`, `WebCodecs`, `mediabunny`, `anime.js`, `Stripe`, `Whisper`, `Real-ESRGAN`, `Demucs`, `Ollama`, `Chatterbox`, `Qwen3-TTS`, `FastAPI`, `rubberband`, `S3`, `Firebase Auth`, `Vercel`, `nginx`, `Cloudflare`, `Darkroom`, `Content Studio`, `video editor`, `media converter`, `AI restoration`, `document scan`
 
 ## Important Links
 - https://www.media-manipulator.com
@@ -22,7 +22,7 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 
 # Media Manipulator
 
-> 75+ browser media tools, a multi-track video editor and an SVG animator, on GPU servers I run myself.
+> 95+ browser media tools, a multi-track video editor and an SVG animator, on GPU servers I run myself.
 
 - Status: shipped
 - Role: Founder, sole engineer
@@ -31,13 +31,13 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 
 Media Manipulator converts, compresses, trims, transcribes, restores and edits images, video and audio in the browser, with the heavy work done on my own GPU servers so large files and AI models are no problem. Darkroom, its multi-track timeline editor, brings colour grading, chroma key, keyframes, transitions, titles and captions to a web page and exports through ffmpeg with preview-to-export parity.
 
-The AI tools (restoration, upscaling, transcription, document scanning, face and PII redaction) run on hardware I operate. No user file goes to a third-party AI provider.
+The AI tools (restoration, upscaling, transcription, video summaries, document scanning, face and PII redaction) run on hardware I operate. No user file goes to a third-party AI provider.
 
 ## In numbers
 
 | Metric | Value |
 | --- | --- |
-| Tool pages | 75+ |
+| Tools | 95+ |
 | Locales | 18 |
 | Transition types | 15 |
 | Metadata tags catalogued | 1,800+ |
@@ -46,16 +46,19 @@ The AI tools (restoration, upscaling, transcription, document scanning, face and
 | Motion animators | 6 |
 | Pro Motion exports a day | 150 |
 | AI models served | 15+ |
+| Voice languages | 23 |
 | API routes | ~180 |
 | Go tests | 900+ |
 
 ## What it is
 
-Media Manipulator started as a converter and became a media workbench. It has 75+ single-purpose tools for images, video and audio, each with its own page, plus Darkroom, a multi-track video editor that runs in a browser tab. Files are processed on servers I run. No account is needed for the standard tools, and guests' files are deleted within 24 hours; signed-in users choose their own retention, from 24 hours to 2 years.
+Media Manipulator started as a converter and became a media workbench. It has 95+ single-purpose tools for images, video and audio, each with its own page, plus Darkroom, a multi-track video editor that runs in a browser tab. Files are processed on servers I run. No account is needed for the standard tools, and guests' files are deleted within 24 hours; signed-in users choose their own retention, from 24 hours to 2 years.
 
 Motion, an SVG animation editor in beta, sits beside Darkroom: it turns an SVG into layers on a keyframe timeline and exports animated SVG, Lottie, React, JavaScript, Flutter or GIF straight from the browser.
 
 The site is fully translated into eighteen languages (English, Ukrainian, Russian, Hebrew, German, Spanish for Spain and Latin America, French, Italian, Portuguese for Portugal and Brazil, Japanese, Simplified and Traditional Chinese, Korean, Arabic, Hindi and Vietnamese), two of them right to left, with a key-parity test so no translation can silently lag. It is a CreaTV Ltd. product, and Darkroom is embedded directly in CreaTV Studio.
+
+The About page names me as founder and sole engineer, with CreaTV Ltd. as the operating company, and a contact page offers a short form (spam-limited by a honeypot and a per-session and per-IP rate limit, delivered to the support inbox through Resend with a reference number) next to the support and privacy addresses. The structured data matches what is on the page: a named author on every article and tutorial, a price range that agrees with the pricing page, and sitemap dates taken from the real edit history.
 
 ## Darkroom: a timeline editor in the browser
 
@@ -65,7 +68,7 @@ Editing features: trim, split and ripple delete at frame accuracy; a media bin w
 
 Still images can be imported and held on the timeline for any length, Premiere-style, and they export like any other clip. Clips can be sped up or slowed down from 0.1x to 10x with pitch kept, reversed, or frozen on a frame. The timeline has a full keyboard-driven tool set (razor, slip, slide, roll and ripple edits, markers, groups, track lock, solo and hide, and detaching audio from video), and a mixer gives each track a fader, pan, three-band EQ, a compressor and live meters, with a master bus.
 
-The media bin has search, folders, colour labels and rename, a safe delete that lists every clip still using a file, a parallel upload queue, and voiceover recorded straight from the microphone onto the timeline.
+The media bin has search, folders, colour labels and rename, a safe delete that lists every clip still using a file, a parallel upload queue, voiceover recorded straight from the microphone onto the timeline, and a Generate voiceover dialog that speaks a typed script in a saved or preset voice (23 languages) on the self-hosted voice engine and drops the clip at the playhead.
 
 Projects are safe to work in: snapshot undo/redo, revision-numbered saves that refuse to clobber, crash-recovery drafts in IndexedDB, and version history with checkpoints. Export is a server-side ffmpeg graph with hardware encoding when available: H.264 or HEVC video, or MP3 and WAV audio, at source resolution or 720p to 2160p, with captions burned in or as SRT/VTT, canvas presets for 16:9, 9:16, 1:1 and 4:5, a frame grab as PNG, and an exports panel with progress and re-render. A golden-image harness keeps the preview and the export within a documented tolerance, and solo and hide apply to the export exactly as they do to the preview.
 
@@ -99,7 +102,7 @@ The inspector reads EXIF, XMP, IPTC and QuickTime metadata through exiftool and 
 
 ## The tool catalogue
 
-Image: format conversion across JPG, PNG, WebP, HEIC, AVIF, SVG and ICO; resize, compress, background removal, image-to-PDF and PDF-to-image. Video: conversion between MP4, MOV, WebM, AVI and MKV; compress, trim, crop, resize, rotate; audio extraction and replacement; frame extraction; GIF; HLS packaging with an H.264 ladder and DASH packaging with AV1/VP9, multilingual captions, storyboards and an I-frame playlist. Audio: conversion, waveform rendering, vocal isolation, voice cleanup and background-noise removal. Image: upscaling.
+The catalogue page has a search box and category tabs; the two dozen most-used tools, each with a page rewritten from the code that runs it (two worked examples with real numbers, a "when not to use this" paragraph and a privacy note specific to that tool, held to a word-count and duplication test in CI), are shown first and the rest sit in a collapsible list per category. Duplicate names for the same tool (MP4 trimmer, video cutter and the like) are thin pages that point to the main one, and search finds a tool by any of its names. Image: format conversion across JPG, PNG, WebP, HEIC, AVIF, SVG and ICO; resize, crop, rotate, compress, sharpen, blur, filters, text overlay, metadata editing, background removal, image-to-PDF and PDF-to-image. Video: conversion between MP4, MOV, WebM, AVI, MKV and HEVC; compress, trim, crop, resize, rotate, flip, reverse, speed change, frame-rate change, stabilisation and colour adjustment; audio extraction and replacement; frame extraction; GIF; HLS packaging with an H.264 ladder and DASH packaging with AV1/VP9, multilingual captions, storyboards and an I-frame playlist. Audio: conversion to MP3, WAV, FLAC, OGG, M4A and Opus; trim, speed, pitch, normalisation, volume, equaliser, reverb, waveform rendering, vocal isolation and removal (the stem comes back in the input's format, so an MP3 stays a 320 kbps MP3 instead of a WAV ten times its size, with FLAC, WAV and a free server-side “Download as MP3” for older WAV results), voice cleanup and background-noise removal. A metadata inspector reads EXIF, GPS, codec, ID3 and PDF tags from any file.
 
 Privacy: EXIF, GPS, IPTC and XMP removal; face blur; text and PII redaction; object removal.
 
@@ -109,13 +112,27 @@ Seven of the tools are recent AI additions: upscale, blur faces, redact text, re
 
 The AI tools run on my own GPU server, so no user file is sent to a third-party model provider. Transcription and captions use Whisper; caption translation uses a TranslateGemma model served by Ollama; video restoration offers six models side by side; image restoration combines upscalers with face-restoration and pre-cleaning models; document scanning turns printed pages into a searchable PDF through Tesseract and transcribes handwriting with a vision model that flags uncertain passages instead of guessing. A VRAM-aware scheduler splits jobs across two GPUs.
 
+Video and audio summaries chain three models into one staged job. Whisper transcribes the speech while ffmpeg picks frames at scene changes, capped by the plan's frame budget (24, 48 or 96); a Qwen3-VL vision model reads them in timestamped batches of four with the transcript lines of that window; then a Qwen text model writes a title, a short summary, chapters with start and end times, topics and the on-screen text, as schema-validated JSON with one repair retry. The result viewer renders it as a document whose chapters seek the original file, with a Markdown copy that matches the server's file byte for byte, and the progress list shows each of the six stages as it runs. A larger deep-synthesis model for Pro sits behind a benchmark gate.
+
 - Restoration: Real-ESRGAN, SwinIR, HAT, BasicVSR++, RVRT, VRT
 - Faces and cleanup: GFPGAN, CodeFormer, FBCNN, SCUNet, NAFNet
 - Also: RIFE frame interpolation, Demucs vocal isolation, DeepFilterNet denoise, LaMa inpainting, rembg
 
+## Voices: clone, design and change a voice
+
+Three voice tools run on self-hosted models with commercial-use licences. Voice cloning makes a saved voice from 5 to 60 seconds of speech recorded in the browser or uploaded, then reads any text in 23 languages with an emotion control. The voice designer turns a written description (gender, age, accent, tone, pace) into free previews and keeps the one you pick by its seed. The voice changer either shifts pitch and formant instantly with rubberband, or converts a recording to a saved or preset voice with AI, with a synced A/B player to compare.
+
+The models are Chatterbox Multilingual (MIT) for cloning, speech and voice conversion, and Qwen3-TTS (Apache 2.0) for voice design and preset voices. A designed voice is stored as its description, seed and a 10-second rendered reference, and from then on Chatterbox speaks it, so one voice sounds the same everywhere. Both engines live in one small resident FastAPI service on the GPU host that loads models on first use and unloads them when idle, behind a VRAM-aware GPU lease; the page says when the engine is warming up.
+
+Consent and safety are built in rather than bolted on. Creating a voice from a recording requires an explicit confirmation that it is your voice or that you have the speaker's permission, stored with the voice together with the version of that text. Every generated or converted file carries an inaudible PerTh watermark; shifted audio is plain signal processing and is not marked. Recordings never leave the servers I run and are never used to train anything; a voice can be deleted from the account page at any time and is deleted with the account, and the Terms forbid impersonation, fraud and political deepfakes.
+
+- Saved voices by plan: 1 free, 5 Premium, 25 Pro; anonymous visitors can use the shifter and the preset voices
+- A failed or refused request gives its daily unit back; design previews are free, three per description an hour
+- Results open in the shared result viewer with MP3 and WAV downloads and audio A/B compare
+
 ## Backend
 
-A Go API (Gin, pgx, Redis) with roughly 180 routes, Postgres with versioned migrations, presigned S3 uploads for large video, a job manager with polling and server-sent events, tiered quotas with per-route rate limits, Stripe billing for the Premium tier, user-selectable data retention with export and delete, transactional email through Resend, a public status page fed by a health endpoint, Prometheus metrics, and FFmpeg, ImageMagick, ExifTool, Poppler and friends behind it. It runs as a systemd service on a headless Ubuntu workstation behind nginx and Cloudflare, with 900+ Go tests.
+A Go API (Gin, pgx, Redis) with roughly 180 routes, Postgres with versioned migrations, presigned S3 uploads for large video, a job manager with polling and server-sent events, tiered quotas with per-route rate limits (a job the server refuses or that fails gives its daily unit back), Stripe billing for the Premium tier, user-selectable data retention with export and delete, transactional email through Resend, a public status page fed by a health endpoint, Prometheus metrics, and FFmpeg, ImageMagick, ExifTool, Poppler and friends behind it. It runs as a systemd service on a headless Ubuntu workstation behind nginx and Cloudflare, with 900+ Go tests.
 
 ## Accounts, Premium and Pro
 
@@ -125,11 +142,11 @@ Pro sits above Premium at 15 USD or 15 EUR a month, or 150 USD or 150 EUR a year
 
 ## Frontend
 
-Next.js App Router on Vercel, React 19, Tailwind 4, Radix, TanStack Query, Zustand and Zod. Eighteen translated locales served as i18next shards per feature, hreflang alternates in the sitemap, consent-gated first-party analytics with its own admin dashboard (revenue, activation and return, and a Darkroom page with its funnel, feature use, editor performance and export health), a public changelog with an RSS feed, an ads architecture that is off by default and audited in CI, and per-locale translator deployments where a hired translator edits the live page in context and submits a reviewed GitHub pull request.
+Next.js App Router on Vercel, React 19, Tailwind 4, Radix, TanStack Query, Zustand and Zod. Eighteen translated locales served as i18next shards per feature, hreflang alternates in the sitemap, consent-gated first-party analytics with its own admin dashboard (revenue, activation and return, a Darkroom page with its funnel, feature use, editor performance and export health, and a Voices page with creations, generations, failure rate and job duration), a public changelog with an RSS feed, an ads architecture that is off by default and audited in CI, and per-locale translator deployments where a hired translator edits the live page in context and submits a reviewed GitHub pull request.
 
 ## Tech
 
-Go, Gin, Postgres, Redis, FFmpeg, ImageMagick, NVENC, Next.js, React, TypeScript, Tailwind, WebGL2, Web Audio, Zod, WebCodecs, mediabunny, anime.js, Stripe, Whisper, Real-ESRGAN, Demucs, Ollama, S3, Firebase Auth, Vercel, nginx, Cloudflare
+Go, Gin, Postgres, Redis, FFmpeg, ImageMagick, NVENC, Next.js, React, TypeScript, Tailwind, WebGL2, Web Audio, Zod, WebCodecs, mediabunny, anime.js, Stripe, Whisper, Real-ESRGAN, Demucs, Ollama, Chatterbox, Qwen3-TTS, FastAPI, rubberband, S3, Firebase Auth, Vercel, nginx, Cloudflare
 
 ## Links
 
@@ -140,7 +157,7 @@ Go, Gin, Postgres, Redis, FFmpeg, ImageMagick, NVENC, Next.js, React, TypeScript
 
 - video: Media Manipulator launch film: a photo converted to sepia, a background removed, GPS and 120 metadata tags stripped, a face blurred, an SVG animated in Motion and a clip edited in Darkroom, ending on the aperture logo and media-manipulator.com — https://pub-5e3f5f69f6bd4f2fb6bc741e03f34851.r2.dev/media-manipulator/MM_Launch_90.mp4
 - image: Media Manipulator home page: the upload panel, quick-tool chips and the Darkroom entry point — https://www.winapps.io/media-manipulator/home.webp
-- image: Tool catalogue listing Darkroom first, then image tools such as compress, resize and background removal — https://www.winapps.io/media-manipulator/tools.webp
+- image: Tool catalogue with search and category tabs, listing Darkroom and Motion first, then every image, video, audio, AI and privacy tool — https://www.winapps.io/media-manipulator/tools.webp
 - image: Darkroom landing page with its quick guide to the multi-track timeline, supported media and export — https://www.winapps.io/media-manipulator/darkroom.webp
 - image: AI image restoration tool describing its pre-clean, upscaler and face-enhancement model pipeline — https://www.winapps.io/media-manipulator/restoration.webp
 - image: AI document scan tool that turns printed pages and handwriting into a searchable PDF or Word file — https://www.winapps.io/media-manipulator/docscan.webp
