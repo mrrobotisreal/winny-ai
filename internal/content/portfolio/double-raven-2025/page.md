@@ -1,4 +1,4 @@
-# Founding Senior Software Engineer, Double Raven Solutions LLC
+# Founding Engineer, Double Raven Solutions LLC
 
 - Route: `/portfolio/double-raven-2025`
 - Canonical URL: `https://www.winapps.io/portfolio/double-raven-2025`
@@ -8,27 +8,28 @@
 Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
-- Status: Founding Senior Software Engineer at Double Raven Solutions LLC, Jan 2025 – Present (Co-founder).
+- Status: Founding Engineer at Double Raven Solutions LLC, Jan 2025 – Present (Part-time).
 - This role is ongoing.
 
 ## Search Keywords
-`portfolio/double-raven-2025`, `Double Raven Solutions LLC`, `Double Raven`, `Founding Senior Software Engineer`, `Go`, `Python`, `Neo4j`, `PostgreSQL`, `Redis`, `RabbitMQ`, `TypeScript`, `React`, `Next.js`, `D3.js`, `Docker`, `Kubernetes`, `ODIN`, `OSINT`, `detectives`, `missing persons`
+`portfolio/double-raven-2025`, `Double Raven Solutions LLC`, `Double Raven`, `Founding Engineer`, `Go`, `Python`, `Neo4j`, `PostgreSQL`, `Redis`, `RabbitMQ`, `TypeScript`, `React`, `Next.js`, `D3.js`, `Docker`, `Kubernetes`, `ODIN`, `OSINT`, `detectives`, `missing persons`, `sole engineer`, `part-time`
 
 ## Important Links
 
 ## Page Content Snapshot
 
-# Founding Senior Software Engineer, Double Raven Solutions LLC
+# Founding Engineer, Double Raven Solutions LLC
 
-> Founding engineer on ODIN, an investigation platform that helps detectives work missing persons, human trafficking and wanted fugitive cases.
+> Sole engineer, part-time, on ODIN, an investigation platform that helps detectives work missing persons, human trafficking and wanted fugitive cases.
 
 - Dates: Jan 2025 – Present
-- Employment: Co-founder
+- Employment: Part-time
 - Page: https://www.winapps.io/portfolio/double-raven-2025
 
 ## Highlights
 
-- Primary engineer on ODIN (Open-source Data Intelligence Network), responsible for the backend engineering and tooling.
+- Sole engineer on ODIN (Open-source Data Intelligence Network), part-time alongside People Inc. I build everything (front end, back end and AI tools), set the architecture and tech stack, and design the software.
+- Everything currently runs on my own hardware and servers.
 - Built ODIN's relational graph tools on Neo4j for exploring the connections inside a case.
 - Built a suite of OSINT (open-source intelligence) tools inside the platform.
 - Built automatic OCR and handwriting extraction, plus the data management and sanitization layer behind everything detectives upload.
@@ -43,7 +44,9 @@ It gives detectives relational graph tools, OSINT tools, and automatic OCR and h
 
 ## My role
 
-I'm the primary engineer, and I own the backend and the tooling. That covers the graph layer on Neo4j, the OSINT tools, document and handwriting extraction, data management and sanitization, and the AI tooling. I have also taken over the web front end and improved it substantially.
+Double Raven's founder runs the business side. I'm the sole engineer, working part-time alongside my full-time role at People Inc. I build everything: the front end, the back end and the AI tools. I set the architecture and the tech stack and design the software, and everything currently runs on my own hardware and servers.
+
+That covers the graph layer on Neo4j, the OSINT tools, document and handwriting extraction, data management and sanitization, the AI tooling, and the web front end, which I took over and have improved substantially.
 
 This is a continuation of the work I started as Double Raven's first engineer in 2020.
 

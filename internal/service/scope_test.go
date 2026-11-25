@@ -52,7 +52,7 @@ func TestPromptCarriesFactsNotHardcodedRoles(t *testing.T) {
 	}
 	req := ask("Is Mitch still at Mirror?")
 	prompt := catalog.BuildSystemPrompt(req, rankRelevantPages(req, pages), facts.Content, "", "")
-	if !strings.Contains(prompt, "ended in May 2026") {
+	if !strings.Contains(prompt, "the contract ended in Aug 2025") {
 		t.Error("prompt is missing the Mirror end date from facts.md")
 	}
 	if strings.Contains(prompt, "primary mission outside of work") {

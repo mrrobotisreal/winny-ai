@@ -1,4 +1,4 @@
-# Software Development Engineer (Front End), Amazon Connect Customer Profiles, Amazon Web Services
+# Front-End Engineer I (L4), Amazon Connect Customer Profiles, Amazon Web Services
 
 - Route: `/portfolio/amazon-connect`
 - Canonical URL: `https://www.winapps.io/portfolio/amazon-connect`
@@ -8,11 +8,11 @@
 Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
-- Status: Software Development Engineer (Front End), Amazon Connect Customer Profiles at Amazon Web Services, Aug 2022 – Nov 2024 (Full-time).
+- Status: Front-End Engineer I (L4), Amazon Connect Customer Profiles at Amazon Web Services, Aug 2022 – Nov 2024 (Full-time).
 - This role has ended (Nov 2024). Never describe it as current.
 
 ## Search Keywords
-`portfolio/amazon-connect`, `Amazon Web Services`, `Amazon Connect`, `Software Development Engineer (Front End), Amazon Connect Customer Profiles`, `React`, `TypeScript`, `React Query`, `Node.js`, `Java 11`, `Python`, `AWS`, `CloudWatch`, `Customer Profiles`, `Customer Segments`, `contact record template`
+`portfolio/amazon-connect`, `Amazon Web Services`, `Amazon Connect`, `Front-End Engineer I (L4), Amazon Connect Customer Profiles`, `React`, `TypeScript`, `React Query`, `Node.js`, `Java 11`, `Python`, `AWS`, `CloudWatch`, `Customer Profiles`, `Customer Segments`, `contact record template`
 
 ## Important Links
 - https://docs.aws.amazon.com/connect/latest/adminguide/inferred-profiles.html
@@ -20,7 +20,7 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 
 ## Page Content Snapshot
 
-# Software Development Engineer (Front End), Amazon Connect Customer Profiles, Amazon Web Services
+# Front-End Engineer I (L4), Amazon Connect Customer Profiles, Amazon Web Services
 
 > Front-end engineer on Amazon Connect Customer Profiles, building AWS Console and Connect admin website features for contact-center customers.
 

@@ -8,7 +8,7 @@
 Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
-- Hero: Сумрак. Flagships: Media Manipulator, CreaTV. Archived projects have no page of their own.
+- Hero: Media Manipulator. Flagships: Сумрак, and CreaTV (on hold). Archived projects have no page of their own.
 - Only the projects listed here exist; if asked about any other project, say it is not on the site.
 
 ## Search Keywords
@@ -27,7 +27,7 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 
 - Media Manipulator (hero, shipped): 95+ browser media tools, a video editor, an SVG animator and a photo editor, on GPU servers I run myself.
 - Сумрак (Sumrak) (flagship, active): An offline-first Russian-learning app built for one student: me.
-- CreaTV (flagship, active): A creator-first video platform, built as twenty-plus services.
+- CreaTV (flagship, paused): A creator-first video platform, built as twenty-plus services.
 - Finance Flow (standard, shipped): Budget planning and investment goals with AI insights.
 - MP3 Drive Player (standard, shipped): A language-learning audio player for Pimsleur-style courses, with stats, games and chat.
 - JourneyApp.me (standard, shipped): An iOS journaling app in Swift and SwiftUI, with a web companion.

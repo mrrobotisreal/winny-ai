@@ -7,12 +7,12 @@
 /download/mp3-drive-player/android | Download MP3 Drive Player for Android | internal/content/download/mp3-drive-player/android/page.md
 /download/mp3-drive-player/ios | Download MP3 Drive Player for iOS | internal/content/download/mp3-drive-player/ios/page.md
 /portfolio | Work history | internal/content/portfolio/page.md
-/portfolio/amazon-connect | Software Development Engineer (Front End), Amazon Connect Customer Profiles, Amazon Web Services | internal/content/portfolio/amazon-connect/page.md
+/portfolio/amazon-connect | Front-End Engineer I (L4), Amazon Connect Customer Profiles, Amazon Web Services | internal/content/portfolio/amazon-connect/page.md
 /portfolio/double-raven-2020 | Full-stack Software Engineer, Double Raven Solutions LLC | internal/content/portfolio/double-raven-2020/page.md
-/portfolio/double-raven-2025 | Founding Senior Software Engineer, Double Raven Solutions LLC | internal/content/portfolio/double-raven-2025/page.md
-/portfolio/mirror | Lead Senior Software Engineer & Founding Engineer, Mirror Inc. | internal/content/portfolio/mirror/page.md
+/portfolio/double-raven-2025 | Founding Engineer, Double Raven Solutions LLC | internal/content/portfolio/double-raven-2025/page.md
+/portfolio/mirror | Lead Senior Frontend Engineer, Mirror Inc. | internal/content/portfolio/mirror/page.md
 /portfolio/people-inc | Senior Software Engineer, People Inc. | internal/content/portfolio/people-inc/page.md
-/portfolio/vmware | Software Engineer, VMware | internal/content/portfolio/vmware/page.md
+/portfolio/vmware | Backend Engineer Apprentice, VMware | internal/content/portfolio/vmware/page.md
 /products/journey-app/contact | Journey App.me Contact | internal/content/products/journey-app/contact/page.md
 /products/journey-app/contact/form | Journey App.me Support | internal/content/products/journey-app/contact/form/page.md
 /products/journey-app/privacy-policy | Journey App.me Privacy Policy | internal/content/products/journey-app/privacy-policy/page.md

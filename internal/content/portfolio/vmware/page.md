@@ -1,4 +1,4 @@
-# Software Engineer, VMware
+# Backend Engineer Apprentice, VMware
 
 - Route: `/portfolio/vmware`
 - Canonical URL: `https://www.winapps.io/portfolio/vmware`
@@ -8,22 +8,22 @@
 Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
-- Status: Software Engineer at VMware, Jun 2022 – Aug 2022 (Full-time).
+- Status: Backend Engineer Apprentice at VMware, Jun 2022 – Aug 2022 (Apprenticeship).
 - This role has ended (Aug 2022). Never describe it as current.
 
 ## Search Keywords
-`portfolio/vmware`, `VMware`, `Software Engineer`, `Java 17`, `Spring Boot`, `Hibernate`, `PostgreSQL`, `H2`, `JUnit`, `Mockito`, `Docker`, `Kubernetes`, `GitLab CI/CD`, `TDD`
+`portfolio/vmware`, `VMware`, `Backend Engineer Apprentice`, `Java 17`, `Spring Boot`, `Hibernate`, `PostgreSQL`, `H2`, `JUnit`, `Mockito`, `Docker`, `Kubernetes`, `GitLab CI/CD`, `TDD`, `apprenticeship`
 
 ## Important Links
 
 ## Page Content Snapshot
 
-# Software Engineer, VMware
+# Backend Engineer Apprentice, VMware
 
-> Backend engineer building Java REST APIs with test-driven development and Kubernetes deployments.
+> Brief backend apprenticeship building Java REST APIs with test-driven development and Kubernetes, which I left to join AWS.
 
 - Dates: Jun 2022 – Aug 2022
-- Employment: Full-time
+- Employment: Apprenticeship
 - Page: https://www.winapps.io/portfolio/vmware
 
 ## Highlights

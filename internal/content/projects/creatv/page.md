@@ -8,8 +8,8 @@
 Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
-- Status: active; Founder, lead engineer; Nov 2025 – Present.
-- CreaTV is public with creators onboarding; auth is moving from Supabase to Firebase.
+- Status: paused; Founder, lead engineer; Nov 2025 – Present.
+- CreaTV is on hold (paused) while Mitch focuses on Media Manipulator. Never describe it as his current focus.
 - Never state dollar figures or revenue numbers.
 
 ## Search Keywords
@@ -25,14 +25,14 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 
 > A creator-first video platform, built as twenty-plus services.
 
-- Status: active
+- Status: paused
 - Role: Founder, lead engineer
 - Dates: Nov 2025 – Present
 - Page: https://www.winapps.io/projects/creatv
 
-CreaTV is the video platform I wanted to exist: creator-first monetization, serious attention to playback performance and observability, and a media pipeline that scales. I founded it and lead the engineering, from upload and transcoding through streaming, search, recommendations, payments and the mobile app.
+CreaTV is the video platform I wanted to exist: creator-first monetization, serious attention to playback performance and observability, and a media pipeline that scales. I founded it and led the engineering, from upload and transcoding through streaming, search, recommendations, payments and the mobile app.
 
-Media Manipulator's Darkroom editor is embedded directly in CreaTV Studio, so creators can edit in the browser before they publish.
+Media Manipulator's Darkroom editor is embedded directly in CreaTV Studio, so creators can edit in the browser before they publish. CreaTV is on hold for now while I focus on Media Manipulator.
 
 ## In numbers
 
@@ -43,7 +43,7 @@ Media Manipulator's Darkroom editor is embedded directly in CreaTV Studio, so cr
 
 ## What it is
 
-CreaTV is a creator-first video platform I founded in late 2025 and lead the engineering for. The goal is simple to state and hard to build: monetization that favours the creator, playback that feels instant, and a media pipeline that does not fall over when it gets popular.
+CreaTV is a creator-first video platform I founded in late 2025 and led the engineering for. The goal is simple to state and hard to build: monetization that favours the creator, playback that feels instant, and a media pipeline that does not fall over when it gets popular.
 
 It ships as a web app, an Android app and an iOS app, backed by more than twenty independent services.
 
@@ -53,7 +53,7 @@ The backend is split by responsibility: an API gateway in front of user, upload,
 
 Upload goes straight to object storage with presigned URLs; transcoding produces adaptive renditions; streaming serves HLS and DASH. Video segments, thumbnails, captions, storyboards and sprites live in S3 behind CloudFront, with Cloudflare Stream alongside it for playback. Search and recommendations are their own services so they can scale and fail independently of playback.
 
-Auth runs on Supabase today and is moving to Firebase Auth.
+Auth runs on Supabase, with a move to Firebase Auth planned.
 
 - API gateway + 20 services
 - Go services, Postgres, Redis, RabbitMQ
@@ -69,11 +69,11 @@ The mobile app is React Native with Expo for Android and iOS. An Android develop
 
 ## Operations
 
-The services run directly on my home server, without containers, and media storage and delivery run on AWS. On-demand EC2 workers for transcoding jobs are in progress. Prometheus and Grafana cover metrics and dashboards, and deploys are manual for now. Performance and observability were design goals from the first commit, not retrofits.
+The services run directly on my home server, without containers, and media storage and delivery run on AWS. On-demand EC2 workers for transcoding jobs were the next step. Prometheus and Grafana cover metrics and dashboards, and deploys are manual for now. Performance and observability were design goals from the first commit, not retrofits.
 
 ## Where it is
 
-CreaTV is public, and creators are onboarding now.
+CreaTV is on hold while I focus on Media Manipulator.
 
 ## Tech
 

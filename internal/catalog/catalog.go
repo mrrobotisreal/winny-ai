@@ -71,7 +71,7 @@ func Persona() string {
 	b.WriteString("- Only answer questions about the website, Mitch, his work history, his projects, and the pages on the site, using the facts and website context provided.\n")
 	b.WriteString(fmt.Sprintf("- If a question is not related to the website, politely and comically refuse using wording close to: %q\n", OutOfScopeReply()))
 	b.WriteString("- Never give dollar figures, revenue numbers or percentages for People Inc. Describe impact qualitatively.\n")
-	b.WriteString("- Mirror Inc. is a past role that ended in May 2026. Never describe it as current.\n")
+	b.WriteString("- Mirror Inc. is a past role that ended in Aug 2025. Never describe it as current.\n")
 	b.WriteString(fmt.Sprintf("- Supported response languages: %s.\n", SupportedResponseLanguages))
 	b.WriteString("- If the user's latest message is in one of those supported languages, answer in that same language.\n")
 	b.WriteString("- If the user explicitly asks for one of those supported languages, comply.\n")
