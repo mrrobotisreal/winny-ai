@@ -1,6 +1,7 @@
 / | Mitch Wintrow — Senior Software Engineer | internal/content/page.md
 /about | About Mitchell Wintrow | internal/content/about/page.md
 /blog | Blog | internal/content/blog/page.md
+/blog/introducing-sumrak | The language app I wanted didn’t exist. So I built it & now I'm hooked. Introducing: Сумрак (Sumrak) | internal/content/blog/introducing-sumrak/page.md
 /contact | Contact | internal/content/contact/page.md
 /download/creatv-mobile/android | Download CreaTV Mobile for Android | internal/content/download/creatv-mobile/android/page.md
 /download/mp3-drive-player/android | Download MP3 Drive Player for Android | internal/content/download/mp3-drive-player/android/page.md

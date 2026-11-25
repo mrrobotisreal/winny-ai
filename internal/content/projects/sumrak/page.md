@@ -9,7 +9,7 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 
 ## Winny Notes
 - Status: active; Creator, sole engineer; Aug 2026 – Present.
-- Сумрак is private and will never be in an app store; there is no public repo or download.
+- Сумрак is private today: there is no public repo or download yet. A Google Play release is coming, with the App Store after that; there is no release date.
 - Never state dollar figures or revenue numbers.
 
 ## Search Keywords
@@ -28,27 +28,28 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 - Dates: Aug 2026 – Present
 - Page: https://www.winapps.io/projects/sumrak
 
-Сумрак (Sumrak) is a private Android app (iOS port in progress) that takes me from A1 toward C1 Russian through graded horror fiction, spaced repetition, blind spoken role-plays, and ТРКИ exam prep. Every part of it is mine: the content pipeline, the on-device speech stack, the sync service, and the twenty-five architecture decisions behind them.
+Сумрак (Sumrak) is a private Android app (iOS port in progress) that takes me from A1 toward C1 Russian through graded horror fiction, spaced repetition, blind spoken role-plays, and ТРКИ exam prep. Every part of it is mine: the content pipeline, the on-device speech stack, the sync service, and the twenty-six architecture decisions behind them.
 
-It will never be in a store. It exists so I can speak Russian with my fiancée Alina, who is Ukrainian, and her family.
+It started as an app for an audience of one, so I can speak Russian with my fiancée Alina, who is Ukrainian, and her family. It is coming to Google Play next, and to the App Store after that.
 
 ## In numbers
 
 | Metric | Value |
 | --- | --- |
-| Content packs | 122 |
-| Annotated sentences | 26,867 |
-| Game modes | 9 |
+| Content packs | 154 |
+| Annotated sentences | 65,171 |
+| Hotel lessons | 171 |
+| Full mock exams | 10 |
 | On-device voices | 4 |
-| Architecture decision records | 25 |
-| TypeScript | ~190k lines |
-| Shipped in | 2 months |
+| Architecture decision records | 26 |
+| TypeScript, excluding tests | ~119k lines |
+| Built in | 3 months |
 
 ## What it is
 
 Сумрак (Sumrak) is a Russian-learning app I built for exactly one user. It runs offline on my phone, keeps all data local, and syncs between my two devices through a small service on my home server. The content is graded fiction in the style of internet horror stories, because I will read a creepypasta every night and I will not read a textbook.
 
-The app owns the whole loop: read a story with narration and word-level highlighting, tap any word or phrase into a word bank, review the bank with spaced repetition and nine game modes, speak through blind role-plays judged on-device, write in a journal that gets AI feedback, and work through the official ТРКИ exam ladder. A progress engine decides what needs work next.
+The app owns the whole loop: read a story with narration and word-level highlighting, tap any word or phrase into a word bank, review the bank with spaced repetition and games, speak through blind role-plays judged on-device, write in a journal that gets AI feedback, and work through the official ТРКИ exam ladder. A progress engine decides what needs work next.
 
 ## Content pipeline
 
@@ -56,9 +57,9 @@ Every story, exam and course is a pack: a Zod schema shared by the authoring pip
 
 User data never holds a foreign key into content. Items reference packs by stable string ids, so a pack can be re-imported or removed without touching a single review record.
 
-- 122 packs across A1–C1: 75 story packs, 17 exam packs, 15 course floors, 10 speaking scenarios
-- 504 story entries, 26,867 annotated sentences, 4,461 Opus audio files
-- 25 series, each with its own bible
+- 154 packs (1.8 GB) across A1–C1: 91 story packs, 30 Hotel floors, 18 exam packs, 10 speaking-scenario packs
+- 640 story entries, 65,171 annotated sentences, 4,895 Opus audio files, about 61 hours of narration
+- 28 series, each with its own bible
 
 ## My voices on ElevenLabs
 
@@ -80,7 +81,7 @@ A word-bank entry can generate a full profile on demand: gender, animacy, stress
 
 ## Spaced repetition and games
 
-Scheduling is FSRS, one card per item and direction, with an offline optimiser that refits the parameters from my own review log. The daily session mixes nine modes by weight: flashcards, multiple choice, cloze (only from sentences I have already read, so nothing is spoiled), sentence builder, listening quiz, pronunciation, a 60-second match sprint, a numbers drill and a typing trainer. Leeches get their own inbox.
+Scheduling is FSRS, one card per item and direction, with an offline optimiser that refits the parameters from my own review log. The games include flashcards, multiple choice, cloze (only from sentences I have already read, so nothing is spoiled), sentence builder, listening quiz, pronunciation, a 60-second match sprint, a numbers drill and a typing trainer. The daily session mixes the first five by weight. Leeches get their own inbox.
 
 ## On-device speech
 
@@ -88,11 +89,11 @@ All speech runs on the phone inside one Kotlin Expo module built on sherpa-onnx:
 
 ## Blind spoken role-plays
 
-Scenarios are conversations with no text on screen. A turn state machine with endpointing presets listens, an offline judge scores the answer against authored expectations and slots, and a near-miss gets one time-boxed rescue call to a fast online model that can upgrade the verdict but can never block the turn. Spoken meta-commands («что значит…», «как сказать…», «повтори») work mid-scene. The cast is drawn from PNG layers with mouth shapes driven by loudness tracks computed in the pipeline. Every attempt is transcoded to Opus and archived as an encrypted media bundle.
+Scenarios are conversations with no text on screen: seven situations so far, three of them also at A2. A turn state machine with endpointing presets listens, an offline judge scores the answer against authored expectations and slots, and a near-miss gets one time-boxed rescue call to a fast online model that can upgrade the verdict but can never block the turn. Spoken meta-commands («что значит…», «как сказать…», «повтори») work mid-scene. The cast is drawn from PNG layers with mouth shapes driven by loudness tracks computed in the pipeline. Every attempt is transcoded to Opus and archived as an encrypted media bundle.
 
 ## ТРКИ exam prep and the Hotel
 
-Exam packs model the official structure: subtests, parts, items, with the texts in the same pack. Mock exams are timed, resumable, scored by the SPbU rule, and graded in layers: offline first, then an AI rubric, then self-assessment. The study path is a hotel: one floor per course pack, a lift between floors, hard gates at 80% to pass and 90% to skip, and an unseen mock exam behind the last door.
+Exam packs model the official structure: subtests, parts, items, with the texts in the same pack. Mock exams are timed, resumable, scored by the SPbU rule, and graded in layers: offline first, then an AI rubric, then self-assessment. The study path is a hotel: two buildings so far, A1 and A2, fifteen floors each, one floor per course pack, with 171 lessons and 6,595 exercises between them. There is a lift between floors, hard gates at 80% to pass and 90% to skip, and an unseen mock exam behind the last door, one of ten full mock exams, five per level.
 
 ## Sync, backup and the API
 
@@ -104,7 +105,7 @@ Around 470 typed local analytics events feed a dashboard that shows vocabulary b
 
 ## How it was built
 
-Two months, 463 commits, 25 architecture decision records, a ubiquitous-language glossary per repo, 284 test files, and cross-language contract tests (Kotlin constants against TypeScript, trigger SQL against the registry, the sync allowlist against the app). Content work runs through its own ticket system. An iOS port is in progress, and the same codebase has been forked into a Ukrainian app and an English-for-Russian-speakers app.
+Three months, 484 commits to the app and 956 to the content, 26 architecture decision records, a ubiquitous-language glossary per repo, 2,906 automated tests, and cross-language contract tests (Kotlin constants against TypeScript, trigger SQL against the registry, the sync allowlist against the app). Content work runs through its own ticket system. An iOS port is in progress, and the same codebase has been forked into a Ukrainian app and an English-for-Russian-speakers app.
 
 ## Tech
 

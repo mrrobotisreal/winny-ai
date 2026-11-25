@@ -5,6 +5,7 @@ Maps each live winapps.io route to its markdown doc under `internal/content/**`.
 - `/` -> `internal/content/page.md` (Mitch Wintrow — Senior Software Engineer)
 - `/about` -> `internal/content/about/page.md` (About Mitchell Wintrow)
 - `/blog` -> `internal/content/blog/page.md` (Blog)
+- `/blog/introducing-sumrak` -> `internal/content/blog/introducing-sumrak/page.md` (The language app I wanted didn’t exist. So I built it & now I'm hooked. Introducing: Сумрак (Sumrak))
 - `/contact` -> `internal/content/contact/page.md` (Contact)
 - `/download/creatv-mobile/android` -> `internal/content/download/creatv-mobile/android/page.md` (Download CreaTV Mobile for Android)
 - `/download/mp3-drive-player/android` -> `internal/content/download/mp3-drive-player/android/page.md` (Download MP3 Drive Player for Android)

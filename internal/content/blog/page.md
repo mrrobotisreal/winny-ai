@@ -8,12 +8,14 @@
 Generated from the winapps.io content layer (winapps_next/content) by `npm run export:winny`. Do not edit by hand.
 
 ## Winny Notes
-- Posts are hosted on Medium and JavaScript in Plain English; the site links out.
+- Newest first. In-repo posts have their own page on winapps.io; the older Medium and JavaScript in Plain English posts link out.
+- In-repo post: "The language app I wanted didn’t exist. So I built it & now I'm hooked. Introducing: Сумрак (Sumrak)" at https://www.winapps.io/blog/introducing-sumrak (first published on X, November 22, 2026).
 
 ## Search Keywords
-`blog`, `articles`, `Medium`, `The React Files: What "They" Don't Want You to Know`, `11 JavaScript Power-Ups You Probably Aren't Using (Yet)`, `Optimize Your Multimedia and Make Your READMEs Pop on GitHub`, `How to Set Up an EC2 Instance With TLS/SSL to Securely Serve HTTPS`
+`blog`, `articles`, `writing`, `Medium`, `The language app I wanted didn’t exist. So I built it & now I'm hooked. Introducing: Сумрак (Sumrak)`, `The React Files: What "They" Don't Want You to Know`, `11 JavaScript Power-Ups You Probably Aren't Using (Yet)`, `Optimize Your Multimedia and Make Your READMEs Pop on GitHub`, `How to Set Up an EC2 Instance With TLS/SSL to Securely Serve HTTPS`
 
 ## Important Links
+- https://www.winapps.io/blog/introducing-sumrak
 - https://javascript.plainenglish.io/the-react-files-what-they-dont-want-you-to-know-318fb8b11374
 - https://medium.com/@90mitchwintrow/11-javascript-power-ups-you-probably-arent-using-yet-and-how-they-ll-turbo-boost-your-code-718e52c670a7
 - https://medium.com/@90mitchwintrow/optimize-your-multimedia-and-make-your-readmes-pop-on-github-866a018c1e13
@@ -21,6 +23,7 @@ Generated from the winapps.io content layer (winapps_next/content) by `npm run e
 
 ## Page Content Snapshot
 
+- The language app I wanted didn’t exist. So I built it & now I'm hooked. Introducing: Сумрак (Sumrak) (X, Nov 2026): Why I built Сумрак (Sumrak), my Russian-learning app: horror stories at every CEFR level read in my own cloned voice, spoken role-plays, a haunted grammar hotel and ТРКИ mock exams. https://www.winapps.io/blog/introducing-sumrak
 - The React Files: What "They" Don't Want You to Know (JavaScript in Plain English, Jun 2025): A lighthearted look at React and what "they" don't want you to know. https://javascript.plainenglish.io/the-react-files-what-they-dont-want-you-to-know-318fb8b11374
 - 11 JavaScript Power-Ups You Probably Aren't Using (Yet) (Medium, May 2025): Lesser-known JavaScript features and techniques that make everyday code better. https://medium.com/@90mitchwintrow/11-javascript-power-ups-you-probably-arent-using-yet-and-how-they-ll-turbo-boost-your-code-718e52c670a7
 - Optimize Your Multimedia and Make Your READMEs Pop on GitHub (Medium, Apr 2025): How to make GitHub READMEs engaging with optimized images, GIFs and video. https://medium.com/@90mitchwintrow/optimize-your-multimedia-and-make-your-readmes-pop-on-github-866a018c1e13

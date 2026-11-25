@@ -83,3 +83,7 @@ Go, TypeScript, React, React Native, Expo, Postgres, Redis, FFmpeg, Python, Rabb
 
 - [Visit creatv.io](https://www.creatv.io)
 - [Android dev build](https://www.winapps.io/download/creatv-mobile/android)
+
+## Media
+
+- video: CreaTV promo film: hover previews, Explore, a click into an episode that starts playing, quality settings, captions, timeline previews, a like, a comment, Watch Later and push notifications, then a switch into CreaTV Studio where that comment arrives, followed by processing details, visibility, AI analytics, retention, the discovery funnel, memberships, channel switching and community polls, ending on the creator principles and the CreaTV lockup with creatv.io — https://pub-5e3f5f69f6bd4f2fb6bc741e03f34851.r2.dev/creatv/creatv-promo-final.mp4
